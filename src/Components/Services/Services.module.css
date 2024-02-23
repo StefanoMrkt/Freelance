@@ -1,0 +1,197 @@
+.container {
+  margin-top: 180px;
+  padding-left: 16%;
+  padding-right: 16%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.title {
+  margin-bottom: 65px;
+  font-family: "Mulish", serif;
+}
+
+.freccia {
+  scale: 0.7;
+  position: absolute;
+  right: 5%;
+  top: -8%;
+}
+
+.divService {
+  display: flex;
+  margin-top: 85px;
+}
+
+.imgService {
+  width: 50%;
+  position: relative;
+  border-radius: 25px;
+  width: 450px;
+  height: 240px;
+  background: rgb(15, 68, 113);
+  background: linear-gradient(
+    180deg,
+    rgba(15, 68, 113, 1) 0%,
+    rgba(51, 51, 51, 1) 100%
+  );
+  display: flex;
+
+  transition: scale 0.7s ease-out;
+}
+
+.phone1 {
+  object-fit: cover;
+  transition: transform 0.7s ease-out;
+  transform: translateY(-60px) scale(0.7) translateX(20px);
+}
+
+.phone2 {
+  object-fit: contain;
+  transform: translateY(-150px) scale(0.6);
+  transition: transform 0.7s ease-out, scale 0.7s ease-out;
+}
+
+.imgService:hover {
+  scale: 1.1;
+  background: #2176ff;
+  background: linear-gradient(180deg, #2176ff, rgba(51, 51, 51, 1) 100%);
+}
+
+.imgService:hover .phone1 {
+  transform: scale(0.6) translateX(10px) translateY(-90px);
+}
+
+.imgService:hover .phone2 {
+  transform: translateY(-100px) translateX(-50px) scale(0.7);
+}
+
+.textService1,
+.textService2 {
+  width: 50%;
+}
+
+.textService1 {
+  padding-left: 80px;
+}
+
+.textService2 {
+  padding-right: 62px;
+}
+
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.underline {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 1.1s ease-in-out;
+  background-color: var(--color-blu);
+  height: 4px;
+  width: 100%;
+}
+
+.underline.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+.serviceTitle1 {
+  font-size: 64px;
+  margin-top: 25px;
+  font-weight: 600;
+  font-family: "Barlow Condensed", sans-serif;
+  display: inline-block;
+}
+
+.serviceTitle2 {
+  font-size: 64px;
+  font-weight: 400;
+  margin-top: 25px;
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 600;
+}
+
+.description1 {
+  font-size: 29px;
+  font-family: "Barlow Condensed", sans-serif;
+  text-align: left;
+}
+
+.description2 {
+  font-size: 29px;
+  font-family: "Barlow Condensed", sans-serif;
+  text-align: end;
+}
+
+.pc1 {
+  scale: 0.9;
+  transform: translateX(20px);
+  transition: transform 0.7s ease-out;
+}
+
+.pc2 {
+  scale: 0.8;
+  transform: translateX(-220px) translateY(-60px);
+  transition: transform 0.7s ease-out;
+}
+
+.imgService:hover .pc1 {
+  transform: translateX(-10px) scale(0.7);
+}
+
+.imgService:hover .pc2 {
+  transform: translateX(-280px) rotate(8deg) scale(1.1) translateY(-20px);
+}
+
+.puntini {
+  position: absolute;
+  scale: 0.5;
+  right: 0%;
+  rotate: 90deg;
+  top: 50%;
+  opacity: 0.3;
+}
+
+.color1 {
+  background-color: rgb(124, 164, 228);
+  width: 40%;
+  height: 50%;
+  position: absolute;
+  top: 20%;
+  right: 2%;
+  opacity: 0.08;
+  border-radius: 100%;
+  filter: blur(65px);
+  z-index: -1;
+}
+
+.color2 {
+  background-color: rgb(124, 164, 228);
+  width: 50%;
+  height: 40%;
+  position: absolute;
+  top: -180px;
+  right: 40%;
+  opacity: 0.11;
+  border-radius: 100%;
+  filter: blur(65px);
+  z-index: -1;
+}
+
+.color4 {
+  background-color: #fc3c3c;
+  width: 40%;
+  height: 200px;
+  position: absolute;
+  top: 70%;
+  right: 40%;
+  opacity: 0.36;
+  border-radius: 70px;
+  filter: blur(95px);
+  z-index: -15;
+}

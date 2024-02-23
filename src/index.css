@@ -1,0 +1,24 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+:root {
+  --bs-tertiary-bg-rgb: transparent;
+  --background-color: rgba(1, 0, 18, 1);
+  --text-color: white;
+  --text-color-subtitle: rgb(167, 163, 163);
+
+  --color-blu: #2176ff;
+  --color-blu-scuro: #083358;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+h2 {
+  font-size: 115px;
+  font-family: "Mulish", sans-serif;
+}
