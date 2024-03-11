@@ -8,7 +8,10 @@ import X from "../../assets/Images/X.png";
 import XEmpty from "../../assets/Images/XEmpty.png";
 import Puntini from "../../assets/Images/Puntini.png";
 
+import { useSelector } from "react-redux";
+
 export default function Method() {
+  const theme = useSelector((state) => state.theme);
   return (
     <>
       <div className={style.container} id="Method">
@@ -16,7 +19,7 @@ export default function Method() {
 
         <Container className={style.grid}>
           <Row>
-            <Col className={style.name}>
+            <Col className={style.name} style={{ color: theme.theme.text }}>
               Metodo Spark
               <div className={style.underline}></div>
             </Col>
@@ -26,7 +29,7 @@ export default function Method() {
                 web design e social media.
               </p>
             </Col>
-            <Col className={style.name}>
+            <Col className={style.name} style={{ color: theme.theme.text }}>
               Report e statistiche <div className={style.underline}></div>
             </Col>
             <Col>
@@ -38,7 +41,7 @@ export default function Method() {
             </Col>
           </Row>
           <Row>
-            <Col className={style.name}>
+            <Col className={style.name} style={{ color: theme.theme.text }}>
               Servizio completo <div className={style.underline}></div>
             </Col>
             <Col>
@@ -47,7 +50,7 @@ export default function Method() {
                 garantendoti coerenza grafica e comunicativa.{" "}
               </p>
             </Col>
-            <Col className={style.name}>
+            <Col className={style.name} style={{ color: theme.theme.text }}>
               Contenuti unici <div className={style.underline}></div>
             </Col>
             <Col>
@@ -58,7 +61,7 @@ export default function Method() {
             </Col>
           </Row>
           <Row>
-            <Col className={style.name}>
+            <Col className={style.name} style={{ color: theme.theme.text }}>
               Garanzia speciale
               <div className={style.underline}></div>
             </Col>
@@ -69,7 +72,7 @@ export default function Method() {
                 aggiuntivi, entro 30 giorni dalla consegna.
               </p>
             </Col>
-            <Col className={style.name}>
+            <Col className={style.name} style={{ color: theme.theme.text }}>
               Creatività <div className={style.underline}></div>
             </Col>
             <Col>
@@ -81,7 +84,7 @@ export default function Method() {
             </Col>
           </Row>
           <Row>
-            <Col className={style.name}>
+            <Col className={style.name} style={{ color: theme.theme.text }}>
               Coinvolgimento
               <div className={style.underline}></div>
             </Col>
@@ -91,7 +94,7 @@ export default function Method() {
                 lavoro.
               </p>
             </Col>
-            <Col className={style.name}>
+            <Col className={style.name} style={{ color: theme.theme.text }}>
               Professionalità
               <div className={style.underline}></div>
             </Col>

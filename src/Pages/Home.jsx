@@ -8,6 +8,9 @@ import Opinion from "../Components/Opinion/Opinion";
 import Blog from "../Components/Blog/Blog";
 import Contacts from "../Components/Contact/Contacts";
 import Footer from "../Components/Footer/Footer";
+import FollowMe from "../Components/FollowMe/FollowMe";
+
+import { useEffect } from "react";
 
 export default function Home() {
   return (
@@ -21,6 +24,7 @@ export default function Home() {
       <Opinion />
       <Blog />
       <Contacts />
+      <FollowMe />
       <Footer />
     </>
   );

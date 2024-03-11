@@ -43,9 +43,6 @@ export default function Portfolio() {
             <h3 className={style.name}>Creazioni Wonderland</h3>
           </div>
         </div>
-
-        <div className={style.color3}></div>
-        <div className={style.color4}></div>
         <div className={style.color1}></div>
         <div className={style.color2}></div>
       </div>

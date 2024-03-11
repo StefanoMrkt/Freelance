@@ -12,30 +12,41 @@ import TikTok from "../../assets/Images/Social/TikTok.png";
 import LinkedIn from "../../assets/Images/Social/LinkedIn.png";
 
 import { useSelector } from "react-redux";
-import { useRef } from "react";
+import { useRef, useEffect, useState } from "react";
 
 export default function Hero() {
   const theme = useSelector((state) => state.theme);
 
   const circularIframeRef = useRef(null);
 
-  function PlayVideo() {
-    const circularIframe = circularIframeRef.current;
-    const iframe = document.createElement("iframe");
-    iframe.src = "https://fast.wistia.com/embed/medias/y9yfs8eki0";
-    iframe.id = "video";
-    iframe.className = style.video;
-    circularIframe.appendChild(iframe);
+  const [loading, setLoading] = useState(false);
 
-    const mySelf = document.getElementById("mySelf");
-    const play = document.getElementById("play");
-    const video = document.getElementById("video");
-    const stop = document.getElementById("stop");
-    mySelf.style.opacity = 0;
-    play.style.opacity = 0;
-    video.style.visibility = "visible";
-    video.style.opacity = 1;
-    stop.style.opacity = 1;
+  function PlayVideo() {
+    setLoading(true);
+    return new Promise((resolve) => {
+      const circularIframe = circularIframeRef.current;
+      const iframe = document.createElement("iframe");
+      iframe.src = "https://fast.wistia.com/embed/medias/y9yfs8eki0";
+      iframe.id = "video";
+      iframe.className = style.video;
+      circularIframe.appendChild(iframe);
+
+      iframe.onload = () => {
+        setLoading(false);
+        console.log("loaded");
+        resolve();
+      };
+    }).then(() => {
+      const mySelf = document.getElementById("mySelf");
+      const play = document.getElementById("play");
+      const video = document.getElementById("video");
+      const stop = document.getElementById("stop");
+      mySelf.style.opacity = 0;
+      play.style.opacity = 0;
+      video.style.visibility = "visible";
+      video.style.opacity = 1;
+      stop.style.opacity = 1;
+    });
   }
 
   function StopVideo() {
@@ -86,20 +97,24 @@ export default function Hero() {
       <div className={style.heroDx}>
         <img src={Bolla} alt="Bolla" className={style.bolla} />
         <img src={Circle} alt="Circle" id="Circle" className={style.circle} />
+        {loading && (
+          <div className={style.loader}>
+            <div className={style.loaderSpinner}></div>
+          </div>
+        )}
         <div className={style.circularIframe} ref={circularIframeRef}></div>
+
         <img
           src={Myself}
           alt="Stefano Montemarli"
           className={style.myself}
           id="mySelf"
         />
-
         <button className={style.stop} id="stop" onClick={StopVideo}>
           <img src={StopButton}></img>
         </button>
-
         <div className={style.divSocial}>
-          <a className={style.btSocial} href="mailto:stefano-mrkt@outlook.it">
+          <a className={style.btSocial} href="mailto:stefanom.work@outlook.it">
             <img src={Email} alt="Email" className={style.social} />
           </a>
           <a
@@ -127,7 +142,6 @@ export default function Hero() {
             <img src={LinkedIn} alt="LinkedIn" className={style.social} />
           </a>
         </div>
-
         <div className={style.color3}></div>
         <div className={style.color4}></div>
         <div className={style.color1}></div>

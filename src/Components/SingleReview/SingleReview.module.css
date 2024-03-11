@@ -1,0 +1,76 @@
+.review {
+    display: flex;
+}
+
+.Sx {
+ overflow: hidden;
+  border-radius: 50%;
+    width: 405px;
+  height: 405px;
+}
+
+.video {
+    border-radius: 50%;
+  width: 430px;
+  height: 430px;
+  scale: 1.8;
+}
+
+.Dx {
+    margin-left: 65px;
+    width: 50%;
+}
+
+.author {
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.logo {
+    border-radius: 50%;
+    width: 25px;
+    height: auto;
+}
+
+.name {
+    align-self:  center;
+    margin-left: 10px;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 16px;
+}
+
+
+.text {
+    font-family: "Maitree", sans-serif;
+      font-size: 20px;
+      margin-bottom: 20px;
+      line-height: 30px;
+}
+
+.skill {
+      font-family: "Barlow Condensed", sans-serif;
+      font-size: 22px;
+}
+
+.stars {
+      display: flex;
+      margin-top: 10px;
+      margin-bottom: 10px;
+}
+
+.star {
+    width: 14px;
+    height: 14px;
+  border-radius: 50%;
+    background-color: var(--color-blu);
+    margin-right: 5px;
+}
+
+.starEmpty {
+     width: 14px;
+    height: 14px;
+  border-radius: 50%;
+    background-color: var(--color-blu);
+    margin-right: 5px;
+    opacity: 0.4;
+}

@@ -8,7 +8,7 @@ import { toggleTheme } from "../../../redux/themeSlice.jsx";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate, Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useState } from "react";
 
@@ -117,8 +117,10 @@ export default function NavbarComponent() {
     <div className={style.divNav}>
       <Navbar expand="lg" className="bg-body-tertiary">
         <Container id="navbarTop" className={style.navbarTop}>
-          <Navbar.Brand className={style.navTitle} href="#home">
-            Stefano Montemarli
+          <Navbar.Brand className={style.navTitle}>
+            <Link className={style.logo} to="/">
+              Stefano Montemarli
+            </Link>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
           <Navbar.Collapse id="basic-navbar-nav">
@@ -150,20 +152,32 @@ export default function NavbarComponent() {
                   ></div>
                   {dropdownVisible && (
                     <div className={style.dropdown}>
-                      <a id="linkService1" className={style.linkService1}>
-                        <img className={style.arrowService} src={arrow} />
-                        Social Media
-                        <div
-                          id="singleService1"
-                          className={style.singleService1}
-                        ></div>
-                      </a>
-                      <a id="linkService2" className={style.linkService2}>
+                      <a
+                        id="linkService2"
+                        className={style.linkService2}
+                        onClick={() => {
+                          navigate(`/servizi/web`);
+                        }}
+                      >
                         <img className={style.arrowService} src={arrow} />
                         Web Designer
                         <div
                           id="singleService2"
                           className={style.singleService2}
+                        ></div>
+                      </a>
+                      <a
+                        id="linkService1"
+                        className={style.linkService1}
+                        onClick={() => {
+                          navigate(`/servizi/social`);
+                        }}
+                      >
+                        <img className={style.arrowService} src={arrow} />
+                        Social Media
+                        <div
+                          id="singleService1"
+                          className={style.singleService1}
                         ></div>
                       </a>
                     </div>
@@ -209,7 +223,7 @@ export default function NavbarComponent() {
                   color: currentTheme === lightTheme ? "white" : "gray",
                 }}
               >
-                Light
+                Chiaro
               </p>
               <MaterialUISwitch
                 checked={currentTheme === darkTheme}
@@ -218,9 +232,9 @@ export default function NavbarComponent() {
               <p
                 style={{ color: currentTheme === darkTheme ? "white" : "gray" }}
               >
-                Dark
+                Scuro
               </p>
-              <NavLink to="#contatti" className={style.contatti}>
+              <NavLink to="#Contacts" className={style.contatti}>
                 Contattami
               </NavLink>
             </div>

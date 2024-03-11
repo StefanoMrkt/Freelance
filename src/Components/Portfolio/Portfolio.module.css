@@ -83,21 +83,9 @@
   position: absolute;
   top: 50px;
   left: 0%;
-  opacity: 0.41;
+  opacity: 0.31;
   border-radius: 100%;
-  filter: blur(65px);
-  z-index: -1;
-}
-
-.color3 {
-  background-color: #33a1fd;
-  width: 40%;
-  height: 250px;
-  position: absolute;
-  top: 4%;
-  right: 0%;
-  opacity: 0.78;
-  border-radius: 70px;
   filter: blur(95px);
   z-index: -1;
 }
+

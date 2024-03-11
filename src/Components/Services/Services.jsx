@@ -7,8 +7,11 @@ import PC1 from "../../assets/Images/PC1.png";
 import PC2 from "../../assets/Images/PC2.png";
 
 import { useRef, useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 export default function Services() {
+  const navigate = useNavigate();
+
   const titleRef1 = useRef(null);
   const underlineRef1 = useRef(null);
   const titleRef2 = useRef(null);
@@ -36,20 +39,25 @@ export default function Services() {
           className={style.imgService}
           onMouseEnter={() => setIsHovered1(true)}
           onMouseLeave={() => setIsHovered1(false)}
+          onClick={() => {
+            navigate(`/servizi/web`);
+          }}
         >
-          <img className={style.phone1} src={Phone1} />
-          <img className={style.phone2} src={Phone} />
+          <img className={style.pc1} src={PC1} />
+          <img className={style.pc2} src={PC2} />
         </button>
 
         <div className={style.textService1}>
           <h3 ref={titleRef1} className={style.serviceTitle1}>
-            Social Media
+            Web Design
           </h3>
           <div
             ref={underlineRef1}
             className={`${style.underline} ${isHovered1 ? style.show : ""}`}
           ></div>
-          <p className={style.description1}>I tuoi social gestiti al meglio</p>
+          <p className={style.description1}>
+            Siti web professionali e ottimizzati
+          </p>
         </div>
       </div>
 
@@ -57,24 +65,25 @@ export default function Services() {
         <div className={style.textService2}>
           <div className={style.titleContainer}>
             <h3 ref={titleRef2} className={style.serviceTitle2}>
-              Web Design
+              Social Media
             </h3>
             <div
               ref={underlineRef2}
               className={`${style.underline} ${isHovered2 ? style.show : ""}`}
             ></div>
           </div>
-          <p className={style.description2}>
-            Siti web professionali e ottimizzati
-          </p>
+          <p className={style.description2}>I tuoi social gestiti al meglio</p>
         </div>
         <button
           className={style.imgService}
           onMouseEnter={() => setIsHovered2(true)}
           onMouseLeave={() => setIsHovered2(false)}
+          onClick={() => {
+            navigate(`/servizi/social`);
+          }}
         >
-          <img src={PC1} className={style.pc1} />
-          <img src={PC2} className={style.pc2} />
+          <img src={Phone} className={style.phone1} />
+          <img src={Phone1} className={style.phone2} />
         </button>
       </div>
 

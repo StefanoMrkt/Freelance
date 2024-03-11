@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Come far schizzare alle stelle il tuo sito web su Google: trucchi SEO",
+    "image": "https://1drv.ms/i/s!AmWaVBl9p_dCgWvfITmJ54jpGge9?e=ux3Yg2",
+    "content": "# Titolo dell'Articolo Questo è il contenuto del mio articolo..."
+  },
+  {
+    "id": 2,
+    "title": "Le prime impressioni contano: l'importanza del design",
+    "image": "https://via.placeholder.com/150",
+    "content": "Questo è il contenuto del mio secondo articolo. Posso usare anche altri caratteri come `monospace` o ~~barrato~~."
+  },
+  {
+    "id": 3,
+    "title": "Responsive design: un sito web per tutti i dispositivi",
+    "image": "https://via.placeholder.com/150",
+    "content": "Questo è il contenuto del mio secondo articolo. Posso usare anche altri caratteri come `monospace` o ~~barrato~~."
+  },
+  {
+    "id": 4,
+    "title": "Analisi dei dati: capire cosa funziona e cosa no sui social media",
+    "image": "https://via.placeholder.com/150",
+    "content": "Questo è il contenuto del mio secondo articolo. Posso usare anche altri caratteri come `monospace` o ~~barrato~~."
+  },
+  {
+    "id": 5,
+    "title": "Web design: le sfide del futuro",
+    "image": "https://via.placeholder.com/150",
+    "content": "Questo è il contenuto del mio secondo articolo. Posso usare anche altri caratteri come `monospace` o ~~barrato~~."
+  }
+]

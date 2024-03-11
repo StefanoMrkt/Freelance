@@ -8,7 +8,76 @@
 }
 
 .title {
-  margin-bottom: 65px;
+  margin-bottom: 35px;
   font-family: "Mulish", serif;
   text-align: left;
+}
+
+.blogList {
+  display: flex;
+}
+
+.right {
+   width: 50%;
+}
+
+.left {
+   width: 50%;
+}
+
+.imgBlog {
+  width: 100%;
+  height: 275px;
+}
+
+.article {
+  margin-bottom: 30px;
+  margin-right: 65px;
+  border: none;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+ 
+} 
+
+.titleArticle {
+  text-align: left;
+  font-size: 38px;
+    font-family: "Barlow Condensed", sans-serif;
+}
+.textArticle {
+  text-align: left;
+  font-size: 15px;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+.link {
+  text-decoration: none;
+   font-family: "Barlow Condensed", sans-serif;
+}
+
+.freccia {
+  margin-left: 8px;
+  height: 12px;
+}
+
+.more {
+  border-radius: 22px;
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: center;
+  padding: 8px 24px;
+  background-color: var(--color-blu);
+  font-size: 16px;
+  border: none;
+  color: white;
+  
+  font-family: "Barlow Condensed", sans-serif;
+  text-decoration: none;
+  transition: scale 0.3s ease;
+}
+
+.more:hover {
+  scale: 1.1;
 }

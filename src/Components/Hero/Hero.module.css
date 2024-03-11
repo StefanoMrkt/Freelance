@@ -101,6 +101,38 @@
   transition: opacity 0.8s;
 }
 
+.loader {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  top: 48%;
+  left: 35%;
+  z-index: 999999;
+  background-color: transparent;
+}
+
+.loaderSpinner {
+  border: 10px solid rgb(255, 255, 255);
+  border-top: 8px solid #fc3c3c;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
 .circularIframe {
   overflow: hidden;
   border-radius: 50%;

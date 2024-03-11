@@ -1,0 +1,108 @@
+.container {
+  margin-top: 100px;
+  padding-left: 16%;
+  padding-right: 16%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.title {
+  margin-bottom: 65px;
+  font-family: "Mulish", serif;
+}
+
+.content {
+  display: flex;
+}
+
+.Laptop {
+    transition: transform 0.3s ease; 
+
+}
+
+.secondDescription {
+    font-size: 17px;
+  font-family: "Maitree", serif;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: rgb(117, 117, 117);
+}
+
+.img {
+  width: 50%;
+}
+
+.Dx {
+
+  margin-left: 25px;
+}
+
+.grid {
+    display: flex;
+   margin-top: 45px;
+}
+
+.point {
+    display: flex;
+  align-items: center;
+}
+
+.icona {
+  width: 45px;
+  height: 45px;
+  margin-right: 20px;
+}
+
+
+.XRed {
+  position: absolute;
+  top: 7%;
+  right: 23%;
+  rotate: 24deg;
+  scale: 0.4;
+}
+
+.Bolla {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  rotate: 24deg;
+  scale: 0.4;
+}
+
+.PuntiniBlu {
+  position: absolute;
+  top: 45%;
+  left: -10%;
+  rotate: 90deg;
+  scale: 0.4;
+}
+
+
+
+.color1 {
+  background-color: rgb(124, 164, 228);
+  width: 20%;
+  height: 18%;
+  position: absolute;
+  top: 60%;
+  right: 14%;
+  opacity: 0.5;
+  border-radius: 100%;
+  filter: blur(65px);
+  z-index: -1;
+}
+
+.color2 {
+  background-color: #fc3c3c;
+  width: 40%;
+  height: 40%;
+  position: absolute;
+  top: 50px;
+  left: 0%;
+  opacity: 0.21;
+  border-radius: 100%;
+  filter: blur(95px);
+  z-index: -1;
+}

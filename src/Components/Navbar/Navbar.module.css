@@ -19,7 +19,7 @@
   background: linear-gradient(
     90deg,
     rgba(1, 0, 18, 1) 0%,
-    rgba(2, 2, 77, 1) 100%
+    #2176ff 100%
   );
   opacity: 0.9;
   transition: height 0.5s ease;
@@ -30,6 +30,11 @@
   font-family: "Mulish", sans-serif;
   font-size: 23px;
   align-self: flex-start;
+}
+
+.logo {
+  color: white;
+  text-decoration: none;
 }
 
 .navPage {
@@ -118,11 +123,10 @@ p {
   border-radius: 22px;
   display: flex;
   justify-content: center;
-  padding: 8px;
+  padding: 8px 24px;
   background-color: #fc3c3c;
-  font-size: 14px;
+  font-size: 16px;
   border: solid 2px #fc3c3c;
-  width: 100px;
   color: white;
   margin-left: 30px;
   font-family: "Barlow Condensed", sans-serif;
@@ -131,7 +135,5 @@ p {
 }
 
 .contatti:hover {
-  background-color: #2176ff;
-  border: solid 2px #2176ff;
   scale: 1.1;
 }
