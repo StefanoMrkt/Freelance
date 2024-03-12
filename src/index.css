@@ -10,13 +10,13 @@
 
   --color-blu: #2176ff;
   --color-blu-scuro: #083358;
+  --color-rosso: #fc3c3c;
 }
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 
 body {
