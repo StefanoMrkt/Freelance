@@ -17,16 +17,21 @@
 }
 
 .Laptop {
-    transition: transform 0.3s ease; 
+   scale: 0.9;
+   height: 65%;
+  }
 
-}
-
-.secondDescription {
-    font-size: 17px;
+.MainDescription, .secondDescription {
+  font-size: 20px;
   font-family: "Maitree", serif;
   margin-top: 20px;
   margin-bottom: 20px;
   color: rgb(117, 117, 117);
+
+}
+
+.secondDescription {
+    font-weight: 600;
 }
 
 .img {

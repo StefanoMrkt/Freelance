@@ -29,11 +29,27 @@
       display: flex;
 }
 
-
-
 .grey {
     color: var(--text-color-subtitle);
     font-size: 16px;
     margin-left: 22px;
     font-family: "Mulish", sans-serif;
+}
+
+
+@media screen and (max-width: 830px) {
+    .name {
+        font-size: 14px;
+    }
+
+    .info {
+        margin-left: 0px;
+          align-items: top;
+    }
+
+    .grey {
+        font-size: 10px; 
+        margin-left: 0px;   
+      
+    }
 }

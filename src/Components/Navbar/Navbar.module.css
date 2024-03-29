@@ -65,8 +65,12 @@
 .mark {
   background-color: transparent;
   width: 100%;
-  height: 0px;
+  height: 2px;
   transition: width 0.3s ease-in-out;
+}
+
+.navPage:hover .mark {
+  background-color: #2176ff;
 }
 
 .activeMark {
@@ -112,6 +116,7 @@
 .divDx {
   display: flex;
   justify-content: flex-end;
+  align-items: center;
 }
 
 p {

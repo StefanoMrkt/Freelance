@@ -113,39 +113,40 @@ export default function Hero() {
         <button className={style.stop} id="stop" onClick={StopVideo}>
           <img src={StopButton}></img>
         </button>
-        <div className={style.divSocial}>
-          <a className={style.btSocial} href="mailto:stefanom.work@outlook.it">
-            <img src={Email} alt="Email" className={style.social} />
-          </a>
-          <a
-            className={style.btSocial}
-            href="https://www.facebook.com/profile.php?id=100086771147797"
-          >
-            <img src={Facebook} alt="Facebook" className={style.social} />
-          </a>
-          <a
-            className={style.btSocial}
-            href="https://www.instagram.com/stefano.montemarli/"
-          >
-            <img src={Instagram} alt="Instagram" className={style.social} />
-          </a>
-          <a
-            className={style.btSocial}
-            href="https://www.tiktok.com/@stefanomontemarli?lang=it-IT"
-          >
-            <img src={TikTok} alt="TikTok" className={style.social} />
-          </a>
-          <a
-            className={style.btSocial}
-            href="https://www.linkedin.com/in/stefano-montemarli/"
-          >
-            <img src={LinkedIn} alt="LinkedIn" className={style.social} />
-          </a>
-        </div>
+
         <div className={style.color3}></div>
         <div className={style.color4}></div>
         <div className={style.color1}></div>
         <div className={style.color2}></div>
+      </div>
+      <div className={style.divSocial}>
+        <a className={style.btSocial} href="mailto:stefanom.work@outlook.it">
+          <img src={Email} alt="Email" className={style.social} />
+        </a>
+        <a
+          className={style.btSocial}
+          href="https://www.facebook.com/profile.php?id=100086771147797"
+        >
+          <img src={Facebook} alt="Facebook" className={style.social} />
+        </a>
+        <a
+          className={style.btSocial}
+          href="https://www.instagram.com/stefano.montemarli/"
+        >
+          <img src={Instagram} alt="Instagram" className={style.social} />
+        </a>
+        <a
+          className={style.btSocial}
+          href="https://www.tiktok.com/@stefanomontemarli?lang=it-IT"
+        >
+          <img src={TikTok} alt="TikTok" className={style.social} />
+        </a>
+        <a
+          className={style.btSocial}
+          href="https://www.linkedin.com/in/stefano-montemarli/"
+        >
+          <img src={LinkedIn} alt="LinkedIn" className={style.social} />
+        </a>
       </div>
     </div>
   );

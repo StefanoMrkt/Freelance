@@ -70,6 +70,36 @@
   z-index: -1;
 }
 
+@media screen and (max-width: 830px) {
+  .container{
+    flex-direction: column;
+    margin-top: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .title {
+    font-size: 43px;
+  }
+
+  .name, .description {
+    width: 100%;
+    margin-left: 0px;
+  }
+
+  .x {
+    scale: 0.2;
+    left: -5%;
+    top: -4%;
+  }
+
+  .xEmpty {
+    scale: 0.1;
+    right: -5%;
+    top: -4%;
+  }
+}
+
 .color3 {
   background-color: #33a1fd;
   width: 16%;

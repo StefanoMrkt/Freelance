@@ -4,22 +4,44 @@
   "info": {
     "singularName": "article",
     "pluralName": "articles",
-    "displayName": "Articles"
+    "displayName": "Articoli",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "Title": {
-      "type": "string"
+    "titolo": {
+      "type": "string",
+      "required": true
     },
-    "Content": {
-      "type": "blocks"
+    "contenuto": {
+      "type": "blocks",
+      "required": true
     },
     "slug": {
       "type": "uid",
-      "targetField": "Title"
+      "required": true
+    },
+    "riassunto": {
+      "type": "text",
+      "required": true
+    },
+    "imageCover": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "alt": {
+      "type": "string"
+    },
+    "sezione": {
+      "type": "string",
+      "required": true
     }
   }
 }

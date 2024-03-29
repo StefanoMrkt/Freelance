@@ -1,7 +1,6 @@
 import style from "./Portfolio.module.css";
 
 import Bolla from "../../assets/Images/Bolla.png";
-import Bolla2 from "../../assets/Images/Bolla2.png";
 
 import Progetto1 from "../../assets/Images/Progetto1.png";
 import Progetto2 from "../../assets/Images/Progetto2.png";

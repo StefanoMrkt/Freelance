@@ -1,0 +1,53 @@
+.container {
+    margin-top: 140px;
+    padding-left: 16%;
+    padding-right: 16%;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.title {
+    margin-bottom: 35px;
+    font-family: "Mulish", serif;
+    text-align: left;
+    font-size: 85px;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.article {
+    display: flex;
+    border-radius: 20px;
+    background: rgb(1, 0, 18);
+    background: linear-gradient(
+    180deg,
+    rgba(1, 0, 18, 1) 20%,
+    #2176ff 100%
+  );
+  margin-bottom: 50px;
+  height: 250px;
+  padding: 20px;
+}
+
+.imgBlog {
+    width: 40%;
+    border-radius: 20px;
+}
+
+.titleArticle {
+    font-size: 35px;
+    font-family: "Barlow Condensed", serif;
+    color: white;
+    margin-left: 20px;
+}
+
+.textArticle {
+    font-size: 17px;
+    font-family: "Maitree", serif;
+    color: white;
+    margin-top: 20px;
+    margin-left: 20px;
+}

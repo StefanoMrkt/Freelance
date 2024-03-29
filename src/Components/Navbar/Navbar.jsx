@@ -1,3 +1,5 @@
+import React from "react";
+
 import style from "./Navbar.module.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Switch from "@mui/material/Switch";
@@ -14,50 +16,33 @@ import { useState } from "react";
 
 import { darkTheme, lightTheme } from "../../../theme.jsx";
 
-import arrow from "../../../src/assets/Images/arrow.png";
-
 export default function NavbarComponent() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-  const [activePage, setActivePage] = useState("Home");
+  const [activePage, setActivePage] = useState(null);
 
   const currentTheme = useSelector((state) => state.theme.theme);
 
   function handleHome() {
-    navigate("/");
     setActivePage("Home");
-
-    document.getElementById("Home").scrollIntoView({ behavior: "smooth" });
+    navigate("/");
   }
 
-  function handleAbout() {
-    setActivePage("About");
-    document.getElementById("About").scrollIntoView({ behavior: "smooth" });
+  function handleWeb() {
+    setActivePage("Web");
+    navigate("/servizi/web");
   }
 
-  function handlePortfolio() {
-    setActivePage("Portfolio");
-    document.getElementById("Portfolio").scrollIntoView({ behavior: "smooth" });
+  function handleSocial() {
+    setActivePage("Social");
+    navigate("/servizi/social");
   }
 
-  function handleMethod() {
-    setActivePage("Method");
-    document.getElementById("Method").scrollIntoView({ behavior: "smooth" });
+  function handleBlog() {
+    setActivePage("Blog");
+    navigate("/blog");
   }
-
-  const [dropdownVisible, setDropdownVisible] = useState(false);
-
-  const handleServices = () => {
-    setDropdownVisible(!dropdownVisible);
-
-    const navbarTop = document.getElementById("navbarTop");
-    if (!dropdownVisible) {
-      navbarTop.style.height = `120px`;
-    } else {
-      navbarTop.style.height = "70px";
-    }
-  };
 
   function changeTheme(event) {
     dispatch(toggleTheme());
@@ -134,87 +119,30 @@ export default function NavbarComponent() {
                     }
                   ></div>
                 </Nav.Link>
-                <Nav.Link className={style.navPage} onClick={handleAbout}>
-                  Chi sono
+                <Nav.Link className={style.navPage} onClick={handleWeb}>
+                  Web Design
                   <div
                     className={
-                      activePage === "About" ? style.activeMark : style.mark
+                      activePage === "Web" ? style.activeMark : style.mark
                     }
                   ></div>
                 </Nav.Link>
-                <Nav.Link className={style.navPage} onClick={handleServices}>
-                  Servizi
-                  <img src={arrow} className={style.arrow} />
+                <Nav.Link className={style.navPage} onClick={handleSocial}>
+                  Social Media
                   <div
                     className={
-                      activePage === "Services" ? style.activeMark : style.mark
-                    }
-                  ></div>
-                  {dropdownVisible && (
-                    <div className={style.dropdown}>
-                      <a
-                        id="linkService2"
-                        className={style.linkService2}
-                        onClick={() => {
-                          navigate(`/servizi/web`);
-                        }}
-                      >
-                        <img className={style.arrowService} src={arrow} />
-                        Web Designer
-                        <div
-                          id="singleService2"
-                          className={style.singleService2}
-                        ></div>
-                      </a>
-                      <a
-                        id="linkService1"
-                        className={style.linkService1}
-                        onClick={() => {
-                          navigate(`/servizi/social`);
-                        }}
-                      >
-                        <img className={style.arrowService} src={arrow} />
-                        Social Media
-                        <div
-                          id="singleService1"
-                          className={style.singleService1}
-                        ></div>
-                      </a>
-                    </div>
-                  )}
-                </Nav.Link>
-                <Nav.Link className={style.navPage} onClick={handleMethod}>
-                  Metodo
-                  <div
-                    className={
-                      activePage === "Metodo" ? style.activeMark : style.mark
+                      activePage === "Social" ? style.activeMark : style.mark
                     }
                   ></div>
                 </Nav.Link>
-                <Nav.Link className={style.navPage} onClick={handlePortfolio}>
-                  Portfolio
-                  <div
-                    className={
-                      activePage === "Portfolio" ? style.activeMark : style.mark
-                    }
-                  ></div>
-                </Nav.Link>
-                <Nav.Link className={style.navPage} onClick={handlePortfolio}>
-                  Recensioni
-                  <div
-                    className={
-                      activePage === "Review" ? style.activeMark : style.mark
-                    }
-                  ></div>
-                </Nav.Link>
-                <Nav.Link className={style.navPage} onClick={handlePortfolio}>
+                {/* <Nav.Link className={style.navPage} onClick={handleBlog}>
                   Blog
                   <div
                     className={
                       activePage === "Blog" ? style.activeMark : style.mark
                     }
                   ></div>
-                </Nav.Link>
+                </Nav.Link> */}
               </div>
             </Nav>
             <div className={style.divDx}>
@@ -234,7 +162,15 @@ export default function NavbarComponent() {
               >
                 Scuro
               </p>
-              <NavLink to="#Contacts" className={style.contatti}>
+              <NavLink
+                className={style.contatti}
+                onClick={(e) => {
+                  e.preventDefault();
+                  document
+                    .getElementById("Contacts")
+                    .scrollIntoView({ behavior: "smooth" });
+                }}
+              >
                 Contattami
               </NavLink>
             </div>

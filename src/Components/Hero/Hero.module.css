@@ -2,11 +2,11 @@
   display: flex;
   padding-top: 80px;
   overflow: hidden;
+  padding-left: 170px;
+  padding-top: 130px;
 }
 
 .heroSx {
-  padding-left: 170px;
-  padding-top: 130px;
   line-height: 1;
   width: 50%;
   position: relative;
@@ -45,7 +45,7 @@
 
 .play {
   position: absolute;
-  top: 34%;
+  top: 26%;
   right: -40%;
   z-index: 10;
   transition: transform 0.3s, opacity 0.4s;
@@ -77,12 +77,13 @@
 
 .heroDx {
   position: relative;
-  margin-top: 0;
+  margin-top: -120px;
   width: 50%;
 }
 
 .circle {
   scale: 1.38;
+  margin-left: -30px;
   transform: translateX(65px) translateY(70px);
   align-self: flex-start;
 }
@@ -93,10 +94,11 @@
   top: 25%;
   z-index: 20;
 }
+
 .myself {
   position: absolute;
   top: -20%;
-  right: 10%;
+  right: 7%;
   scale: 0.62;
   transition: opacity 0.8s;
 }
@@ -140,7 +142,7 @@
   height: 535px;
   position: absolute;
   top: 30%;
-  left: 5%;
+  left: 2%;
   z-index: 15;
 }
 
@@ -181,8 +183,102 @@
 .oblique {
   position: absolute;
   top: -10%;
-  left: -9%;
+  left: -38%;
   scale: 0.5;
+}
+
+@media screen and (max-width: 830px) {
+  .heroDiv {
+    flex-direction: column;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 120px;
+  }
+
+  .heroSx {
+    width: 100%;
+  }
+
+  .myWork {
+    font-size: 15px;
+  }
+
+  .myName {
+    font-size: 50px;
+  }
+
+  .oblique {
+    left: -35%;
+    scale: 0.3;
+  }
+
+  .divSocial {
+    top: 25%;
+    right: 5%;
+  }
+
+  .social {
+    width: 30px;
+    height: 30px;
+  }
+
+  .heroDown {
+    margin-top: 20px;
+  }
+
+  .myDescription {
+    font-size: 17px;
+    width: 100%;
+    margin-left: 10px;
+  }
+
+  .heroDx {
+    width: 100%;
+    margin-top: 0px;
+    align-items: center;
+  }
+
+  .circle {
+    scale: 1;
+    margin-left: 1px;
+    width: 100%;
+    transform: translateX(0px) translateY(0px);
+  }
+
+  .bolla {
+    scale: 0.5;
+    top: 20%;
+  }
+
+  .myself {
+    scale: 0.35;
+    top: -100%;
+    left: -55%;
+  }
+
+  .play {
+    top: 50%;
+    left: 20%;
+    scale: 0.2;
+  }
+
+  .stop {
+    top: 50%;
+    left: 20%;
+    scale: 0.2;
+  }
+
+  .circularIframe {
+    top: 20%;
+    left: 10%;
+    width: 535px;
+    height: 535px;
+  }
+
+  .video {
+    width: 560px;
+    height: 560px;
+  }
 }
 
 .color1 {

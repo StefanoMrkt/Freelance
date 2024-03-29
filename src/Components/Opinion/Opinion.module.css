@@ -31,6 +31,29 @@
   z-index: 10;
 }
 
+@media screen and (max-width: 830px) {
+  .container{
+    flex-direction: column;
+    margin-top: 95px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .title {
+    font-size: 43px;
+  }
+
+  .puntini {
+    scale: 0.3;
+  }
+
+  .bolla {
+    scale: 0.3;
+    top: 1%;
+  }
+  
+}
+
 .color1 {
   background-color: #fc3c3c;
   width: 28%;

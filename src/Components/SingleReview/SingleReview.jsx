@@ -52,7 +52,7 @@ export default function SingleReview({
           <p className={style.name}>{Nome}</p>
         </div>
         <p className={style.text}>{Testo}</p>
-        <div>
+        <div className={style.stelline}>
           <div>
             <p className={style.skill}>Professionalità</p>
             <div className={style.stars}>{starsProfessionalita}</div>
