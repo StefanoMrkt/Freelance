@@ -18,29 +18,29 @@ export default function Method() {
         <h2 className={style.title}>Il mio metodo</h2>
 
         <Container className={style.grid}>
-          <Row className="flex-column flex-md-row">
+          <Row className="flex-column flex-sm-row">
             <Col
-              md={6}
+              sm={12}
               className={style.name}
               style={{ color: theme.theme.text }}
             >
               Metodo Spark
               <div className={style.underline}></div>
             </Col>
-            <Col md={6}>
+            <Col sm={12}>
               <p className={style.description}>
                 Il mio metodo per dare energia e vitalità ai tuoi progetti di
                 web design e social media.
               </p>
             </Col>
             <Col
-              md={6}
+              sm={12}
               className={style.name}
               style={{ color: theme.theme.text }}
             >
               Report e statistiche <div className={style.underline}></div>
             </Col>
-            <Col md={6}>
+            <Col sm={12}>
               <p className={style.description}>
                 Ti invio report dettagliati con le statistiche e le analisi, per
                 mostrarti i risultati ottenuti e le possibili azioni da
@@ -48,54 +48,43 @@ export default function Method() {
               </p>
             </Col>
           </Row>
-          <Row className="flex-column flex-md-row">
-            <Col className={style.name} style={{ color: theme.theme.text }}>
+          <Row className="flex-column flex-sm-row">
+            <Col
+              sm={12}
+              className={style.name}
+              style={{ color: theme.theme.text }}
+            >
               Servizio completo <div className={style.underline}></div>
             </Col>
-            <Col md={6}>
+            <Col sm={12}>
               <p className={style.description}>
                 Creo il tuo sito web e gestisco i tuoi social media,
-                garantendoti coerenza grafica e comunicativa.{" "}
+                garantendoti coerenza grafica e comunicativa.
               </p>
             </Col>
             <Col
-              md={6}
+              sm={12}
               className={style.name}
               style={{ color: theme.theme.text }}
             >
               Contenuti unici <div className={style.underline}></div>
             </Col>
-            <Col md={6}>
+            <Col sm={12}>
               <p className={style.description}>
                 Catturo l’attenzione del tuo pubblico e lo faccio interagire con
                 te, con un tocco personale e distintivo
               </p>
             </Col>
           </Row>
-          <Row className="flex-column flex-md-row">
+          <Row className="flex-column flex-sm-row">
             <Col
-              md={6}
-              className={style.name}
-              style={{ color: theme.theme.text }}
-            >
-              Garanzia speciale
-              <div className={style.underline}></div>
-            </Col>
-            <Col md={6}>
-              <p className={style.description}>
-                Se non sei soddisfatto o non raggiungi gli obiettivi, rivedo la
-                strategia e implemento le azioni necessarie, senza costi
-                aggiuntivi, entro 30 giorni dalla consegna.
-              </p>
-            </Col>
-            <Col
-              md={6}
+              sm={12}
               className={style.name}
               style={{ color: theme.theme.text }}
             >
               Creatività <div className={style.underline}></div>
             </Col>
-            <Col md={6}>
+            <Col sm={12}>
               <p className={style.description}>
                 Non mi limito a copiare quello che fanno gli altri, ma
                 sperimento nuove idee e soluzioni. Nessun template già pronto,
@@ -103,30 +92,30 @@ export default function Method() {
               </p>
             </Col>
           </Row>
-          <Row className="flex-column flex-md-row">
+          <Row className="flex-column flex-sm-row">
             <Col
-              md={6}
+              sm={12}
               className={style.name}
               style={{ color: theme.theme.text }}
             >
               Coinvolgimento
               <div className={style.underline}></div>
             </Col>
-            <Col md={6}>
+            <Col sm={12}>
               <p className={style.description}>
                 Ti ascolto e ti do il mio parere in ogni fase del processo di
                 lavoro.
               </p>
             </Col>
             <Col
-              md={6}
+              sm={12}
               className={style.name}
               style={{ color: theme.theme.text }}
             >
               Professionalità
               <div className={style.underline}></div>
             </Col>
-            <Col md={6}>
+            <Col sm={12}>
               <p className={style.description}>
                 Rispetto le scadenze imposte e le esigenze dei miei clienti.
               </p>

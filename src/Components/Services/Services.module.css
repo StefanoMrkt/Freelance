@@ -13,10 +13,11 @@
 }
 
 .freccia {
-  scale: 0.7;
+  scale: 0.5;
   position: absolute;
-  right: 5%;
+  right: -15%;
   top: -8%;
+  display: none;
 }
 
 .divService {
@@ -26,6 +27,8 @@
 
 .imgService {
   position: relative;
+  margin-left: 25px;
+  margin-right: 25px;
   border-radius: 25px;
   width: 50%;
   height: 240px;
@@ -70,13 +73,13 @@
   width: 50%;
 }
 
-.textService1 {
-  padding-left: 80px;
-}
+  .textService1 {
+    margin-left: 10px;
+  }
 
-.textService2 {
-  padding-right: 62px;
-}
+  .textService2 {
+    margin-right: 10px;
+  }
 
 .titleContainer {
   display: flex;
@@ -146,17 +149,74 @@
   transform: translateX(-280px) rotate(8deg) scale(1.1) translateY(-20px);
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 1100px) {
+  .container {
+    margin-top: 90px;
+  }
+
+  .title {
+    font-size: 68px;
+    margin-bottom: 30px;
+  }
+  .freccia {
+    scale: 0.2;
+    left: -5%;
+    top: -4%;
+  }
+
+  .pc1, .pc2 {
+    scale: 0.6;
+  }
+
+  .pc1 {
+    transform: translateX(-90px) translateY(-60px) scale(1.2);
+  }
+
+  .pc2 {
+    transform: translateX(-450px) translateY(-60px) scale(1.1);
+  }
+
+  .textService1, .textService2 {
+    width: 100%;
+  }
+
+  .serviceTitle1, .serviceTitle2 {
+    font-size: 35px;
+    margin-bottom: 15px;
+  }
+
+  .description1, .description2 {
+    font-size: 20px;
+    margin-bottom: 45px;
+    margin-top: -15px;
+  }
+
+
+  .phone1 {
+    transform: translateY(-95px) scale(0.6) translateX(-50px);
+  }
+
+  .phone2 {
+   transform: translateY(-80px) translateX(-150px) scale(0.6);
+  }
+  
+}
+
+@media screen and (max-width: 900px) {
+   .container{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media screen and (max-width: 630px) {
 .container{
-  margin-top: 95px;
-  padding-left: 5%;
-  padding-right: 5%;
+  margin-top: 0px;
 }
 
   .title {
     font-size: 43px;
   }
-
   .freccia {
     scale: 0.2;
     left: -5%;
@@ -220,6 +280,13 @@
   .phone2 {
    transform: translateY(-80px) translateX(-150px) scale(0.6);
   }
+
+  .imgService {
+    margin-left: 0px;
+    margin-right: 0px;
+  
+  }
+
   
 }
 

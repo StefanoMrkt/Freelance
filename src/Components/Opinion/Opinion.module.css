@@ -31,12 +31,38 @@
   z-index: 10;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 1100px) {
+  .container {
+    margin-top: 90px;
+  }
+
+  .title {
+    font-size: 63px;
+  }
+
+  .puntini {
+    scale: 0.3;
+    left: 0%;
+  }
+
+  .bolla {
+    scale: 0.3;
+    top: 1%;
+  }
+  
+}
+
+@media screen and (max-width: 900px) {
+   .container{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+@media screen and (max-width: 630px) {
   .container{
     flex-direction: column;
     margin-top: 95px;
-    padding-left: 5%;
-    padding-right: 5%;
   }
 
   .title {
@@ -45,6 +71,7 @@
 
   .puntini {
     scale: 0.3;
+    left: 0%;
   }
 
   .bolla {

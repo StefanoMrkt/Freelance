@@ -5,8 +5,9 @@ import Cerchio2 from "../../assets/Images/Cerchio2.png";
 import PuntiniBlu from "../../assets/Images/PuntiniBlu.png";
 import Freccina from "../../assets/Images/FrecciaArancione.png";
 
-import { useRef } from "react";
+import { useRef, useEffect } from "react";
 import emailjs from "@emailjs/browser";
+import Cal, { getCalApi } from "@calcom/embed-react";
 
 export default function Contacts() {
   const form = useRef();
@@ -35,6 +36,17 @@ export default function Contacts() {
         }
       );
   };
+
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi();
+      cal("ui", {
+        styles: { branding: { brandColor: "#2176ff" } },
+        hideEventTypeDetails: false,
+        layout: "month_view",
+      });
+    })();
+  }, []);
 
   return (
     <div className={style.container} id="Contacts">
@@ -82,7 +94,13 @@ export default function Contacts() {
         </div>
       </form>
 
-      <img src={Freccina} alt="Freccia" className={style.freccina} />
+      {/* <Cal
+        calLink="stefanom/call-conoscitiva"
+        style={{ width: "100%", height: "100%", overflow: "scroll" }}
+        config={{ layout: "month_view" }}
+      /> */}
+
+      {/* <img src={Freccina} alt="Freccia" className={style.freccina} /> */}
       <img src={PuntiniBlu} alt="PuntiniBlu" className={style.puntiniBlu} />
       <img src={Cerchio1} alt="Cerchio" className={style.cerchio1} />
       <img src={Cerchio2} alt="Cerchio" className={style.cerchio2} />

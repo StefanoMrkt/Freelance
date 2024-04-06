@@ -1,5 +1,5 @@
 .container {
-  margin-top: 80px;
+  margin-top: 40px;
   padding-left: 16%;
   padding-right: 16%;
   padding-bottom: 15px;
@@ -36,8 +36,19 @@
     font-family: "Mulish", sans-serif;
 }
 
+@media screen and (max-width: 900px) {
+   .container{
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 630px) {
+  .container{
+    flex-direction: column;
+    margin-top: 25px;
+  }
+
     .name {
         font-size: 14px;
     }

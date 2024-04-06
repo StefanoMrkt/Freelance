@@ -1,18 +1,17 @@
 import style from "./Hero.module.css";
 import Circle from "../../assets/Images/Circle.png";
-import Myself from "../../assets/Images/Myself.png";
 import PlayButton from "../../assets/Images/Play.png";
 import StopButton from "../../assets/Images/Close.png";
 import Bolla from "../../assets/Images/Bolla.png";
 import Oblique from "../../assets/Images/Oblique.png";
 import Email from "../../assets/Images/Social/Email.png";
-import Facebook from "../../assets/Images/Social/Facebook.png";
-import Instagram from "../../assets/Images/Social/Instagram.png";
-import TikTok from "../../assets/Images/Social/TikTok.png";
-import LinkedIn from "../../assets/Images/Social/LinkedIn.png";
+import Facebook from "../../assets/Images/Social/FacebookC.png";
+import Instagram from "../../assets/Images/Social/InstagramC.png";
+import TikTok from "../../assets/Images/Social/TikTokC.png";
+import LinkedIn from "../../assets/Images/Social/LinkedInC.png";
 
 import { useSelector } from "react-redux";
-import { useRef, useEffect, useState } from "react";
+import { useRef, useState } from "react";
 
 export default function Hero() {
   const theme = useSelector((state) => state.theme);
@@ -37,11 +36,11 @@ export default function Hero() {
         resolve();
       };
     }).then(() => {
-      const mySelf = document.getElementById("mySelf");
+      const circle = document.getElementById("Circle");
       const play = document.getElementById("play");
       const video = document.getElementById("video");
       const stop = document.getElementById("stop");
-      mySelf.style.opacity = 0;
+      circle.style.opacity = 0;
       play.style.opacity = 0;
       video.style.visibility = "visible";
       video.style.opacity = 1;
@@ -50,11 +49,11 @@ export default function Hero() {
   }
 
   function StopVideo() {
-    const mySelf = document.getElementById("mySelf");
+    const circle = document.getElementById("Circle");
     const play = document.getElementById("play");
     const video = document.getElementById("video");
     const stop = document.getElementById("stop");
-    mySelf.style.opacity = 1;
+    circle.style.opacity = 1;
     play.style.opacity = 1;
     video.style.opacity = 0;
     video.style.visibility = "hidden";
@@ -76,40 +75,34 @@ export default function Hero() {
           <br />
           WEB DESIGNER & FRONT-END DEVELOPER
         </div>
-        <div className={style.myName} style={{ color: theme.theme.text }}>
-          Stefano <br />
-          Montemarli
+        <div className={style.divMe}>
+          <div className={style.myName} style={{ color: theme.theme.text }}>
+            Stefano Montemarli
+          </div>
+          <div className={style.heroDown}>
+            <div
+              className={style.line}
+              style={{ background: theme.theme.text }}
+            ></div>
+            <p className={style.myDescription}>
+              Gestisco profili social e creo siti web. Sarò il tuo supporto e lo
+              faccio con passione e dedizione
+            </p>
+          </div>
         </div>
-        <div className={style.heroDown}>
-          <div
-            className={style.line}
-            style={{ background: theme.theme.text }}
-          ></div>
-          <p className={style.myDescription}>
-            Gestisco profili social e creo siti web. Sarò il tuo supporto e lo
-            faccio con passione e dedizione
-          </p>
-        </div>
-        <button className={style.play} id="play" onClick={PlayVideo}>
-          <img src={PlayButton}></img>
-        </button>
       </div>
       <div className={style.heroDx}>
         <img src={Bolla} alt="Bolla" className={style.bolla} />
         <img src={Circle} alt="Circle" id="Circle" className={style.circle} />
+        <button className={style.play} id="play" onClick={PlayVideo}>
+          <img src={PlayButton}></img>
+        </button>
         {loading && (
           <div className={style.loader}>
             <div className={style.loaderSpinner}></div>
           </div>
         )}
         <div className={style.circularIframe} ref={circularIframeRef}></div>
-
-        <img
-          src={Myself}
-          alt="Stefano Montemarli"
-          className={style.myself}
-          id="mySelf"
-        />
         <button className={style.stop} id="stop" onClick={StopVideo}>
           <img src={StopButton}></img>
         </button>

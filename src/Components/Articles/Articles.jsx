@@ -1,23 +1,38 @@
 import style from "./Articles.module.css";
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
+import { request, gql } from "graphql-request";
 
 import freccia from "../../assets/Images/Freccina1.png";
 
 export default function Articles() {
   const [articoli, setArticoli] = useState([]);
+  const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    axios
-      .get("http://localhost:1337/api/articles?populate=*")
-      .then((response) => {
-        setArticoli(response.data.data);
-        console.log(response.data.data);
-      })
-      .catch((error) => {
-        console.error("Si è verificato un errore:", error);
-      });
+    const endpoint =
+      "https://api-eu-central-1-shared-euc1-02.hygraph.com/v2/clufjd0ci1nn407we3c9m8hko/master";
+
+    const query = gql`
+      {
+        articles {
+          slug
+          cover {
+            url
+          }
+          titolo
+          riassunto
+          articolo {
+            html
+          }
+        }
+      }
+    `;
+    request(endpoint, query).then((data) => {
+      setArticoli(data);
+      setIsLoading(false);
+      console.log(data);
+    });
   }, []);
 
   let leftArticle = [];
@@ -37,60 +52,78 @@ export default function Articles() {
   return (
     <div className={style.container}>
       <h2 className={style.title}>Blog</h2>
-      <div className={style.left}>
-        {leftArticle.map((articolo) => (
-          <div key={articolo.id} className={style.article}>
-            <img
-              className={style.imgBlog}
-              // src={articoli[0].attributes.image}
-              alt={articolo.attributes.alt}
-            />
-            <h3 className={style.titleArticle}>{articolo.attributes.titolo}</h3>
-            <div className={style.textArticle}>
-              {articolo.attributes.riassunto}
+      {isLoading ? (
+        <div>Caricamento...</div>
+      ) : (
+        articoli && (
+          <>
+            <div className={style.left}>
+              {leftArticle.map((articolo) => (
+                <div key={articolo.articles.id} className={style.article}>
+                  <img
+                    className={style.imgBlog}
+                    src={articolo.articles.cover.url}
+                    alt={articolo.attributes.alt}
+                  />
+                  <h3 className={style.titleArticle}>
+                    {articolo.articles.titolo}
+                  </h3>
+                  <div className={style.textArticle}>
+                    {articolo.articles.articolo}
+                  </div>
+                  <Link
+                    to={`/blog/${articolo.articles.slug}`}
+                    className={style.link}
+                  >
+                    Leggi tutto <img className={style.freccia} src={freccia} />
+                  </Link>
+                </div>
+              ))}
             </div>
-          </div>
-        ))}
-      </div>
-      <div className={style.right}>
-        {rightArticles.map((articolo) => (
-          <div key={articolo.id} className={style.article}>
-            <img
-              className={style.imgBlog}
-              // src={articoli[0].attributes.image}
-              alt={articolo.attributes.alt}
-            />
-            <h3 className={style.titleArticle}>{articolo.attributes.titolo}</h3>
-            <div className={style.textArticle}>
-              {articolo.attributes.riassunto}
+            <div className={style.right}>
+              {rightArticles.map((articolo) => (
+                <div key={articolo.articles.id} className={style.article}>
+                  <img
+                    className={style.imgBlog}
+                    src={articolo.articles.cover.url}
+                  />
+                  <h3 className={style.titleArticle}>
+                    {articolo.articles.titolo}
+                  </h3>
+                  <div className={style.textArticle}>
+                    {articolo.articles.articolo}
+                  </div>
+                  <Link
+                    to={`/blog/${articolo.articles.slug}`}
+                    className={style.link}
+                  >
+                    Leggi tutto <img className={style.freccia} src={freccia} />
+                  </Link>
+                </div>
+              ))}
             </div>
-          </div>
-        ))}
-      </div>
-      <div className={style.normal}>
-        {normalArticles.map((articolo) => (
-          <div key={articolo.id} className={style.article}>
-            <img
-              className={style.imgBlog}
-              src={
-                "http://localhost:1337" +
-                articolo.attributes.imageCover.data.attributes.url
-              }
-              alt={articolo.attributes.alt}
-            />
-            <h3 className={style.titleArticle}>{articolo.attributes.titolo}</h3>
-            <div className={style.textArticle}>
-              {articolo.attributes.riassunto}
+            <div className={style.normal}>
+              {normalArticles.map((articolo) => (
+                <div key={articolo.id} className={style.article}>
+                  <img className={style.imgBlog} src={articolo.articles.id} />
+                  <h3 className={style.titleArticle}>
+                    {articolo.articles.titolo}
+                  </h3>
+                  <div className={style.textArticle}>
+                    {articolo.articles.articolo}
+                  </div>
+                  <Link
+                    to={`/blog/${articolo.articles.slug}`}
+                    className={style.link}
+                  >
+                    Leggi tutto <img className={style.freccia} src={freccia} />
+                  </Link>
+                </div>
+              ))}
             </div>
-            <Link
-              to={`/blog/${articolo.attributes.slug}`}
-              className={style.link}
-            >
-              Leggi tutto <img className={style.freccia} src={freccia} />
-            </Link>
-          </div>
-        ))}
-      </div>
+          </>
+        )
+      )}
     </div>
   );
 }

@@ -58,6 +58,15 @@
   margin-left: 50px;
 }
 
+.myNav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.switchLogo {
+  display: none;
+}
+
 .divPages > .navPage {
   align-self: flex-start;
 }
@@ -141,4 +150,45 @@ p {
 
 .contatti:hover {
   scale: 1.1;
+}
+
+@media screen and (max-width: 990px) {
+.divNav {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.myNav{
+  flex-direction: column;
+}
+
+.divDx {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.switch {
+  margin-left: -10px;
+}
+
+  .navPage {
+    margin-right: 30px;
+    margin-left: 0px;
+    font-size: 12px;
+  }
+
+  .contatti {
+    margin-left: 0px;
+    margin-top: 15px;
+  }
+
+  .divPages {
+    margin-left: 0px;
+    flex-direction: column;
+    order: 2;
+  }
+
+  .themeText {
+    display: none;
+  }
 }

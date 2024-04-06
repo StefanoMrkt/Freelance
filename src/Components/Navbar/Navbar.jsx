@@ -12,7 +12,8 @@ import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { NavLink, useNavigate, Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { getCalApi } from "@calcom/embed-react";
 
 import { darkTheme, lightTheme } from "../../../theme.jsx";
 
@@ -150,29 +151,26 @@ export default function NavbarComponent() {
                 style={{
                   color: currentTheme === lightTheme ? "white" : "gray",
                 }}
+                className={style.themeText}
               >
                 Chiaro
               </p>
-              <MaterialUISwitch
-                checked={currentTheme === darkTheme}
-                onChange={changeTheme}
-              />
+              <div className={style.switch}>
+                <MaterialUISwitch
+                  checked={currentTheme === darkTheme}
+                  onChange={changeTheme}
+                />
+              </div>
+
               <p
                 style={{ color: currentTheme === darkTheme ? "white" : "gray" }}
+                className={style.themeText}
               >
                 Scuro
               </p>
-              <NavLink
-                className={style.contatti}
-                onClick={(e) => {
-                  e.preventDefault();
-                  document
-                    .getElementById("Contacts")
-                    .scrollIntoView({ behavior: "smooth" });
-                }}
-              >
+              <a className={style.contatti} href="#Contacts">
                 Contattami
-              </NavLink>
+              </a>
             </div>
           </Navbar.Collapse>
         </Container>

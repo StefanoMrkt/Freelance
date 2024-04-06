@@ -7,12 +7,12 @@
   position: relative;
 }
 
-
 .title {
   margin-bottom: 65px;
   font-family: "Mulish", serif;
   text-align: left;
   margin-right: 140px;
+  line-height: 100px;
 }
 
 .dots {
@@ -70,12 +70,104 @@
     transform: scale(1.2);
 }
 
-@media screen and (max-width: 830px) {
-    .container {
-        flex-direction: column;
-    }
+@media screen and (max-width: 1100px) {
+  .container{
+    flex-direction: row;
+    margin-top: 45px;
+  }
 
-    .title {
-        font-size: 50px;
-    }
+  .title {
+    font-size: 63px;
+    line-height: 45px;
+    margin-right: 20px;
+  }
+
+  .circle {
+    width: 8px;
+    height: 8px;
+    margin-right: 6px;
+    margin-top: -58px;
+    margin-left: 6px;
+  }
+
+  .circleLess {
+    width: 8px;
+    height: 8px;
+    margin-right: 6px;
+    margin-top: -58px;
+    margin-left: 6px;
+  }
+
+  .circleZero {
+    width: 8px;
+    height: 8px;
+    margin-right: 6px;
+    margin-top: -58px;
+    margin-left: 6px;
+  }
+
+  .blockDiv {
+    margin-top: 0px;
+  }
+
+  .social {
+    width: 38px;
+    margin-right: 20px;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  .container{
+    flex-direction: column;
+    padding-left: 5%;
+    padding-right: 5%;
+    justify-content: space-between;
+  }
+
+   .blockDiv {
+    display: flex;
+    flex-direction: row;
+    margin-top: -20px;
+  }
+}
+
+
+@media screen and (max-width: 630px) {
+
+  .title {
+    font-size: 43px;
+    line-height: 45px;
+    margin-right: 20px;
+  }
+
+  .circle {
+    width: 8px;
+    height: 8px;
+    margin-right: 6px;
+    margin-top: -58px;
+    margin-left: 6px;
+  }
+
+  .circleLess {
+    width: 8px;
+    height: 8px;
+    margin-right: 6px;
+    margin-top: -58px;
+    margin-left: 6px;
+  }
+
+  .circleZero {
+    width: 8px;
+    height: 8px;
+    margin-right: 6px;
+    margin-top: -58px;
+    margin-left: 6px;
+  }
+
+  .social {
+    width: 30px;
+    margin-right: 20px;
+  }
+
 }

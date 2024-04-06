@@ -2,15 +2,30 @@ import style from "./Contacts.module.css";
 import PuntiniBlu from "../../../assets/Images/PuntiniBlu.png";
 
 import { useRef, useState } from "react";
-import { useNavigate } from "react-router-dom";
 
 export default function Contacts() {
   const form = useRef();
   const [isSubmitted, setIsSubmitted] = useState(false);
 
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    setIsSubmitted(true);
+
+    const formData = new FormData(event.target);
+
+    try {
+      const response = await fetch(event.target.action, {
+        method: event.target.method,
+        body: formData,
+      });
+
+      if (response.ok) {
+        setIsSubmitted(true);
+      } else {
+        throw new Error("Failed to submit form");
+      }
+    } catch (error) {
+      console.error(error);
+    }
   };
 
   return (
@@ -29,7 +44,7 @@ export default function Contacts() {
         <form
           className={style.form}
           ref={form}
-          action="https://assets.mailerlite.com/jsonp/644337/forms/113099232009783174/subscribe"
+          action="https://assets.mailerlite.com/jsonp/644337/forms/117519243837179650/subscribe"
           method="POST"
           onSubmit={handleSubmit}
         >
@@ -53,16 +68,7 @@ export default function Contacts() {
             required="true"
             placeholder="Inserisci il tuo cognome"
           />
-          <label className={style.label} htmlFor="fields[phone]">
-            Telefono*
-          </label>
-          <input
-            className={style.input}
-            type="tel"
-            name="fields[phone]"
-            required="true"
-            placeholder="Inserisci il tuo numero di telefono"
-          />
+
           <label className={style.label} htmlFor="fields[email]">
             Email*
           </label>
@@ -72,6 +78,16 @@ export default function Contacts() {
             name="fields[email]"
             required="true"
             placeholder="Inserisci il tuo indirizzo di posta elettronica"
+          />
+          <label className={style.label} htmlFor="fields[phone]">
+            Telefono*
+          </label>
+          <input
+            className={style.input}
+            type="tel"
+            name="fields[phone]"
+            required="true"
+            placeholder="Inserisci il tuo numero di telefono"
           />
 
           <div className={style.btForm}>

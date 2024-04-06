@@ -1,9 +1,8 @@
 .heroDiv {
   display: flex;
-  padding-top: 80px;
   overflow: hidden;
   padding-left: 170px;
-  padding-top: 130px;
+  padding-top: 170px;
 }
 
 .heroSx {
@@ -46,7 +45,7 @@
 .play {
   position: absolute;
   top: 26%;
-  right: -40%;
+  left: -30%;
   z-index: 10;
   transition: transform 0.3s, opacity 0.4s;
   scale: 0.35;
@@ -82,10 +81,13 @@
 }
 
 .circle {
-  scale: 1.38;
+  scale: 1.28;
   margin-left: -30px;
+  margin-top: 20px;
+  padding-bottom: 25px;
   transform: translateX(65px) translateY(70px);
   align-self: flex-start;
+  transition: opacity 0.8s;
 }
 
 .bolla {
@@ -93,14 +95,6 @@
   scale: 0.7;
   top: 25%;
   z-index: 20;
-}
-
-.myself {
-  position: absolute;
-  top: -20%;
-  right: 7%;
-  scale: 0.62;
-  transition: opacity 0.8s;
 }
 
 .loader {
@@ -187,28 +181,23 @@
   scale: 0.5;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 1100px) {
   .heroDiv {
-    flex-direction: column;
     padding-left: 7%;
     padding-right: 7%;
     padding-top: 120px;
   }
 
-  .heroSx {
-    width: 100%;
-  }
-
   .myWork {
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .myName {
-    font-size: 50px;
+    font-size: 65px;
   }
 
   .oblique {
-    left: -35%;
+    left: -45%;
     scale: 0.3;
   }
 
@@ -227,20 +216,18 @@
   }
 
   .myDescription {
-    font-size: 17px;
-    width: 100%;
+    font-size: 19px;
+    width: 82%;
     margin-left: 10px;
   }
 
   .heroDx {
-    width: 100%;
-    margin-top: 0px;
+    margin-top: -60px;
     align-items: center;
   }
 
   .circle {
-    scale: 1;
-    margin-left: 1px;
+    scale: 0.9;
     width: 100%;
     transform: translateX(0px) translateY(0px);
   }
@@ -250,20 +237,14 @@
     top: 20%;
   }
 
-  .myself {
-    scale: 0.35;
-    top: -100%;
-    left: -55%;
-  }
-
   .play {
-    top: 50%;
+    top: -10%;
     left: 20%;
     scale: 0.2;
   }
 
   .stop {
-    top: 50%;
+    top: -10%;
     left: 20%;
     scale: 0.2;
   }
@@ -280,6 +261,8 @@
     height: 560px;
   }
 }
+
+
 
 .color1 {
   background-color: rgb(124, 164, 228);
@@ -329,4 +312,167 @@
   border-radius: 70px;
   filter: blur(95px);
   z-index: -1;
+}
+
+@media screen and (max-width: 850px) {
+  .heroDiv {
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 120px;
+    height: auto;
+  }
+
+  .myWork {
+    font-size: 15px;
+  }
+
+  .myName {
+    font-size: 50px;
+  }
+
+  .oblique {
+    left: -35%;
+    top: -30%;
+    scale: 0.3;
+  }
+
+  .divSocial {
+    top: 10%;
+    right: 5%;
+  }
+
+  .social {
+    width: 30px;
+    height: 30px;
+  }
+
+  .myDescription {
+    font-size: 17px;
+    width: 82%;
+    margin-left: 10px;
+  }
+
+
+  .bolla {
+    scale: 0.5;
+    top: 20%;
+  }
+
+  .play {
+    top: -20%;
+    left: 0%;
+    scale: 0.2;
+  }
+
+  .stop {
+    top: -20%;
+    left: 0%;
+    scale: 0.2;
+  }
+
+  .circularIframe {
+    top: 20%;
+    left: 10%;
+    width: 535px;
+    height: 535px;
+  }
+
+  .video {
+    width: 560px;
+    height: 560px;
+  }
+
+}
+
+@media screen and (max-width: 750px) {
+  .heroDiv {
+    flex-direction: column;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 120px;
+    height: auto;
+  }
+
+  .myWork {
+    font-size: 15px;
+  }
+
+  .heroSx {
+    width: 100%;
+  }
+
+  .myName {
+    font-size: 60px;
+    width: 100%;
+    font-weight: 700;
+  }
+
+  .oblique {
+    left: -35%;
+    top: -30%;
+    scale: 0.3;
+  }
+
+  .divSocial {
+     display: none;
+  }
+
+  .myDescription {
+    font-size: 17px;
+    width: 82%;
+    margin-left: 10px;
+  }
+
+  .heroDx {
+    align-items: center;
+    width: 100%;
+    margin-left: 25px;
+  }
+
+  .circle {
+    margin-top: 50px;
+  }
+
+  .bolla {
+    scale: 0.5;
+    top: 20%;
+  }
+
+  .play {
+    top: 10%;
+    left: 30%;
+    scale: 0.3;
+  }
+
+  .stop {
+    top: 10%;
+    left: 30%;
+    scale: 0.3;
+  }
+
+  .circularIframe {
+    top: 20%;
+    left: 10%;
+    width: 535px;
+    height: 535px;
+  }
+
+  .video {
+    width: 560px;
+    height: 560px;
+  }
+}
+
+@media screen and (max-width: 440px) {
+    .play {
+    top: -20%;
+    left: 0%;
+    scale: 0.2;
+  }
+
+  .stop {
+    top: -20%;
+    left: 0%;
+    scale: 0.2;
+  }
 }

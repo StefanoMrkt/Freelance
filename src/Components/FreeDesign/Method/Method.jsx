@@ -18,72 +18,77 @@ export default function Method() {
         <h2 className={style.title}>Cosa ti svelerò</h2>
 
         <Container className={style.grid}>
-          <Row>
+          <Row className="flex-column flex-sm-row">
             <Col
-              className={style.name + " col-12 col-md-6"}
+              sm={12}
+              className={style.name}
               style={{ color: theme.theme.text }}
             >
               Ottimizzazione
               <div className={style.underline}></div>
             </Col>
-            <Col className="col-12 col-md-6">
+            <Col sm={12}>
               <p className={style.description}>
                 Come ottimizzare il tuo sito web per essere indicizzato al
                 meglio dai motori di ricerca e raggiungere i tuoi clienti
               </p>
             </Col>
           </Row>
-          <Row>
+          <Row className="flex-column flex-sm-row">
             <Col
-              className={style.name + " col-12 col-md-6"}
+              sm={12}
               style={{ color: theme.theme.text }}
+              className={style.name}
             >
               Curiosità <div className={style.underline}></div>
             </Col>
-            <Col className="col-12 col-md-6">
+            <Col sm={12}>
               <p className={style.description}>
                 Come trasformare il tuo sito web in un posto in cui i tuoi
                 clienti si sentano incuriositi da te e dalla tua attività
               </p>
             </Col>
           </Row>
-          <Row>
+          <Row className="flex-column flex-sm-row">
             <Col
-              className={style.name + " col-12 col-md-6"}
+              sm={12}
               style={{ color: theme.theme.text }}
+              className={style.name}
             >
               Grafica <div className={style.underline}></div>
             </Col>
-            <Col className="col-12 col-md-6">
+            <Col sm={12}>
               <p className={style.description}>
                 Come rendere il tuo sito web graficamente accattivante, in modo
                 da catturare l'attenzione dei tuoi clienti
               </p>
             </Col>
           </Row>
-          <Row>
+          <Row className="flex-column flex-sm-row">
             <Col
-              className={style.name + " col-12 col-md-6"}
+              sm={12}
               style={{ color: theme.theme.text }}
+              className={style.name}
             >
               Contenuti <div className={style.underline}></div>
             </Col>
-            <Col className="col-12 col-md-6">
+            <Col sm={12}>
               <p className={style.description}>
                 Come creare contenuti coinvolgenti e di valore per i tuoi
                 clienti e per i motori di ricerca
               </p>
             </Col>
           </Row>
-          <Row>
+          <Row className="flex-column flex-sm-row">
             <Col
-              className={style.name + " col-12 col-md-6"}
+              sm={12}
               style={{ color: theme.theme.text }}
+              className={style.name}
             >
               SEO oriented
               <div className={style.underline}></div>
             </Col>
-            <Col className="col-12 col-md-6">
+            <Col sm={12}>
               <p className={style.description}>
                 Come creare contenuti che siano ottimizzati per i motori di
                 ricerca e come utilizzare le parole chiave per essere trovato
@@ -91,14 +96,15 @@ export default function Method() {
               </p>
             </Col>
           </Row>
-          <Row>
+          <Row className="flex-column flex-sm-row">
             <Col
-              className={style.name + " col-12 col-md-6"}
+              sm={12}
               style={{ color: theme.theme.text }}
+              className={style.name}
             >
               Target <div className={style.underline}></div>
             </Col>
-            <Col className="col-12 col-md-6">
+            <Col sm={12}>
               <p className={style.description}>
                 Trova il tuo target di riferimento e capisci come raggiungerlo e
                 fidelizzarlo con il tuo sito web

@@ -10,7 +10,7 @@
 .cta {
     width: 60%;
     padding-top: 80px;
-    height: 300px;
+    height: auto;
     border-radius: 30px;
     opacity: 0.9;
     padding: 40px;
@@ -46,7 +46,7 @@
   border-radius: 22px;
   display: flex;
   justify-content: center;
-  padding: 8px 24px;
+  padding: 8px 30px;
   background-color: #fc3c3c;
   font-size: 20px;
   border: solid 2px #fc3c3c;

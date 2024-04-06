@@ -1,5 +1,5 @@
 .container {
-  margin-top: 80px;
+  margin-top: 180px;
   padding-left: 16%;
   padding-right: 16%;
   display: flex;
@@ -15,11 +15,11 @@
 }
 
 .form {
-display: flex;
-flex-direction: column;
-justify-content: center ;
-margin: auto;
-width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center ;
+  margin: auto;
+  width: 50%;
 }
 
 .label {
@@ -35,7 +35,7 @@ width: 50%;
   height: 40px;
   border-radius: 20px;
   margin: 15px 0px;
- background-color: rgb(212, 222, 236);
+  background-color: rgb(212, 222, 236);
   opacity: 0.8;
   color: black;
   font-size: 16px;
@@ -46,7 +46,7 @@ width: 50%;
   height: 100px;
   padding-left: 12px;
   padding-top: 6px;
-   background: rgb(1, 0, 18);
+  background: rgb(1, 0, 18);
   background: linear-gradient(
     90deg,
     rgba(1, 0, 18, 1) 0%,
@@ -82,13 +82,11 @@ width: 50%;
 
 .sended {
   font-size: 30px;
-    font-family: "Barlow Condensed", sans-serif;
+  font-family: "Barlow Condensed", sans-serif;
   text-align: center;
   margin-top: 20px;
 
 }
-
-
 
 .freccina {
   position: absolute;
@@ -109,8 +107,15 @@ width: 50%;
 }
 
 @media screen and (max-width: 830px) {
+  .container{
+    flex-direction: column;
+    margin-top: 10px;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
   .title {
-    font-size: 40px;
+    font-size: 43px;
   }
 
   .form {

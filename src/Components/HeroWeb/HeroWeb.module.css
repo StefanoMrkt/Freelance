@@ -1,12 +1,10 @@
 .heroDiv {
   display: flex;
-  padding-top: 20px;
-  overflow: hidden;
+   padding-top: 130px;
 }
 
 .heroSx {
   padding-left: 170px;
-  padding-top: 130px;
   line-height: 1;
   width: 50%;
   position: relative;
@@ -192,6 +190,128 @@ rotate: 10deg;
   width: 300px;
   line-height: 1.5;
   margin-left: 35px;
+}
+
+@media screen and (max-width: 1100px) {
+  .heroDiv {
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 120px;
+  }
+
+  .myWork {
+    font-size: 17px;
+  }
+
+  .myName {
+    font-size: 65px;
+  }
+
+  .heroDown {
+    margin-top: 20px;
+  }
+
+  .myDescription {
+    font-size: 19px;
+    width: 82%;
+    margin-left: 10px;
+  }
+
+  .heroDx {
+    margin-top: -60px;
+    align-items: center;
+  }
+
+  .bolla {
+    scale: 0.5;
+    top: 20%;
+  }
+
+
+}
+
+@media screen and (max-width: 850px) {
+  .heroDiv {
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 120px;
+    height: auto;
+  }
+
+  .myWork {
+    font-size: 15px;
+  }
+
+  .myName {
+    font-size: 50px;
+  } 
+
+  .myDescription {
+    font-size: 17px;
+    width: 82%;
+    margin-left: 10px;
+  }
+
+
+  .bolla {
+    scale: 0.5;
+    top: 20%;
+  }
+
+
+}
+
+@media screen and (max-width: 750px) {
+  .heroDiv {
+    flex-direction: column;
+    padding-left: 7%;
+    padding-right: 7%;
+    padding-top: 130px;
+    height: 800px;
+  }
+
+  .heroSx {
+    padding-left: 0px;
+  }
+
+  .heroDx {
+    padding-top: 395px;
+  }
+
+  .serviceImage1, .serviceImage2 {
+    scale: 0.6;
+  }
+
+  .myWork {
+    font-size: 15px;
+  }
+
+  .heroSx {
+    width: 100%;
+  }
+
+  .myName {
+    font-size: 50px;
+    width: 100%;
+    font-weight: 700;
+  }
+
+  .myDescription {
+    font-size: 17px;
+    width: 82%;
+    margin-left: 10px;
+  }
+
+  .heroDx {
+    align-items: center;
+    width: 100%;
+    margin-left: 25px;
+  }
+
+  .bolla {
+    scale: 0.5;
+    top: 20%;
+  }
 }
 
 .color1 {

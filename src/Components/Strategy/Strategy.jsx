@@ -78,6 +78,11 @@ export default function Strategy({
 
   //Regola l'opacità quando le card entrano ed escono dal viewport
   useEffect(() => {
+    // Se lo schermo è di dimensioni mobili, ritorna e non eseguire il codice seguente
+    if (window.matchMedia("(max-width: 600px)").matches) {
+      return;
+    }
+
     const observers = cardRefs.current.slice(0, -1).map((ref, index) => {
       const observer = new IntersectionObserver(
         ([entry]) => {
