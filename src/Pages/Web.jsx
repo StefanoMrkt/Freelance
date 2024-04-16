@@ -41,6 +41,7 @@ export default function Web() {
           property="og:url"
           content="https://www.stefanomontemarli.it/servizi/web"
         />
+        <link rel="canonical" href="https://www.stefanomontemarli.it" />
 
         <script>
           {`!function(f,b,e,v,n,t,s)

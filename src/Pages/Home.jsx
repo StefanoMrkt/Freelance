@@ -10,6 +10,7 @@ import Contacts from "../Components/Contact/Contacts";
 import Footer from "../Components/Footer/Footer";
 import FollowMe from "../Components/FollowMe/FollowMe";
 import CTA from "../Components/CTA/CTA";
+import Call from "../Components/Call/Call";
 
 import { Helmet } from "react-helmet";
 import { useEffect } from "react";
@@ -42,7 +43,7 @@ export default function Home() {
           content="https://1drv.ms/i/s!AmWaVBl9p_dCgWiemacZx7YdEJm6?e=OpigS2"
         />
         <meta property="og:url" content="https://www.stefanomontemarli.it" />
-
+        <link rel="canonical" href="https://www.stefanomontemarli.it" />
         <script>
           {`!function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -63,10 +64,6 @@ export default function Home() {
           &noscript=1"
           />`}
         </noscript>
-        <meta
-          name="google-site-verification"
-          content="0ijiX29zHbhM4fP7fjQ6Imgd3PbpjZ2Xir1rKPR6eZM"
-        />
       </Helmet>
       <Navbar />
       <Hero />
@@ -80,6 +77,7 @@ export default function Home() {
       <Contacts />
       <FollowMe />
       <Footer />
+      <Call />
     </>
   );
 }
