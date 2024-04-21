@@ -41,7 +41,7 @@ export default function Call() {
         >
           Inizia
         </a>
-        <img src={Bolla} alt="bolla" className={style.bolla} />
+        <img src={Bolla} alt="" className={style.bolla} />
       </div>
     </div>
   );

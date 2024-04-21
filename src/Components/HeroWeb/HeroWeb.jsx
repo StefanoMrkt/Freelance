@@ -10,27 +10,27 @@ export default function HeroWeb() {
   return (
     <div className={style.heroDiv} id="Home">
       <div className={style.heroSx}>
-        <div className={style.myWork}>Web Design</div>
-        <div className={style.myName} style={{ color: theme.theme.text }}>
+        <p className={style.myWork}>Web Design</p>
+        <h1 className={style.myName} style={{ color: theme.theme.text }}>
           Esperienza Web al tuo servizio
-        </div>
+        </h1>
         <div className={style.heroDown}>
           <div
             className={style.line}
             style={{ background: theme.theme.text }}
           ></div>
-          <p className={style.myDescription}>
+          <h2 className={style.myDescription}>
             Trasformo idee in siti Web coinvolgenti e strategici, creando
             esperienze digitali su misura.
-          </p>
+          </h2>
         </div>
       </div>
       <div className={style.heroDx}>
-        <img src={Bolla} alt="Bolla" className={style.bolla1} />
-        <img src={Bolla} alt="Bolla" className={style.bolla2} />
-        <img src={Bolla} alt="Bolla" className={style.bolla3} />
-        <img src={Bolla} alt="Bolla" className={style.bolla4} />
-        <img src={Bolla} alt="Bolla" className={style.bolla5} />
+        <img src={Bolla} alt="" className={style.bolla1} />
+        <img src={Bolla} alt="" className={style.bolla2} />
+        <img src={Bolla} alt="" className={style.bolla3} />
+        <img src={Bolla} alt="" className={style.bolla4} />
+        <img src={Bolla} alt="" className={style.bolla5} />
         <img src={Laptop1} alt="Laptop" className={style.serviceImage1} />
         <img src={Laptop2} alt="Laptop" className={style.serviceImage2} />
 

@@ -10,10 +10,10 @@ import { toggleTheme } from "../../../redux/themeSlice.jsx";
 import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
-import { NavLink, useNavigate, Link } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { useSelector } from "react-redux";
-import { useState, useEffect } from "react";
-import { getCalApi } from "@calcom/embed-react";
+import { useState } from "react";
+// import { getCalApi } from "@calcom/embed-react";
 
 import { darkTheme, lightTheme } from "../../../theme.jsx";
 
@@ -32,12 +32,10 @@ export default function NavbarComponent() {
 
   function handleWeb() {
     setActivePage("Web");
-    navigate("/servizi/web");
   }
 
   function handleSocial() {
     setActivePage("Social");
-    navigate("/servizi/social");
   }
 
   function handleBlog() {
@@ -112,30 +110,38 @@ export default function NavbarComponent() {
           <Navbar.Collapse id="basic-navbar-nav">
             <Nav className="me-auto">
               <div className={style.divPages}>
-                <Nav.Link className={style.navPage} onClick={handleHome}>
+                <Link className={style.navPage} to="/" onClick={handleHome}>
                   Home
                   <div
                     className={
                       activePage === "Home" ? style.activeMark : style.mark
                     }
                   ></div>
-                </Nav.Link>
-                <Nav.Link className={style.navPage} onClick={handleWeb}>
+                </Link>
+                <Link
+                  className={style.navPage}
+                  to="/servizi/web-design"
+                  onClick={handleWeb}
+                >
                   Web Design
                   <div
                     className={
                       activePage === "Web" ? style.activeMark : style.mark
                     }
                   ></div>
-                </Nav.Link>
-                <Nav.Link className={style.navPage} onClick={handleSocial}>
+                </Link>
+                <Link
+                  className={style.navPage}
+                  to="/servizi/social-media"
+                  onClick={handleSocial}
+                >
                   Social Media
                   <div
                     className={
                       activePage === "Social" ? style.activeMark : style.mark
                     }
                   ></div>
-                </Nav.Link>
+                </Link>
                 {/* <Nav.Link className={style.navPage} onClick={handleBlog}>
                   Blog
                   <div

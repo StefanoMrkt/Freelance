@@ -143,8 +143,8 @@ export default function Strategy({
     <div className={style.container} id="Strategy">
       <h2 className={style.title}>Il Metodo</h2>
       <div className={style.menu}>
-        <img src={Freccia} alt="Freccia" className={style.freccia} />
-        <img src={Puntini} alt="Puntini" className={style.puntini} />
+        <img src={Freccia} alt="" className={style.freccia} />
+        <img src={Puntini} alt="" className={style.puntini} />
 
         <div className={style.color1}></div>
         <div className={style.color2}></div>
@@ -164,7 +164,7 @@ export default function Strategy({
                 >
                   {item.number}
                 </div>
-                <h4 className={style.description}>{item.description}</h4>
+                <h3 className={style.description}>{item.description}</h3>
               </div>
               <div
                 className={style.underline}

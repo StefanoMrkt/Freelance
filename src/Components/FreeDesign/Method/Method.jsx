@@ -113,9 +113,9 @@ export default function Method() {
           </Row>
         </Container>
 
-        <img src={X} alt="X" className={style.x} />
-        <img src={XEmpty} alt="XEmpty" className={style.xEmpty} />
-        <img src={Puntini} alt="Puntini" className={style.puntini} />
+        <img src={X} alt="" className={style.x} />
+        <img src={XEmpty} alt="" className={style.xEmpty} />
+        <img src={Puntini} alt="" className={style.puntini} />
 
         <div className={style.color2}></div>
         <div className={style.color3}></div>

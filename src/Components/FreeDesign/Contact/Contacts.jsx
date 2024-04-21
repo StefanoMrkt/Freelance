@@ -101,7 +101,7 @@ export default function Contacts() {
         </form>
       )}
 
-      <img src={PuntiniBlu} alt="PuntiniBlu" className={style.puntiniBlu} />
+      <img src={PuntiniBlu} alt="" className={style.puntiniBlu} />
 
       <div className={style.color3}></div>
       <div className={style.color4}></div>

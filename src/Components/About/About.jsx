@@ -17,17 +17,22 @@ export default function About() {
         <div className={style.divDx}>
           <h2 className={style.title}>Chi sono</h2>
           <p className={style.DescriptionDesktop}>
-            Ciao, sono Stefano. La mia passione è comunicare e creare con il
-            computer.
+            Ciao, sono Stefano, un esperto in Web Design e Social Media
+            Marketing. La mia passione è utilizzare le mie competenze digitali
+            per comunicare e creare soluzioni efficaci.
             <br />
-            <br /> Mi occupo di creare siti web professionali e ottimizzati, e
-            di gestire le strategie di social media marketing per far crescere
-            il tuo business. Ti risparmio tempo e ti offro supporto e assistenza
-            continua. <br />
             <br />
-            Se vuoi saperne di più, visita le pagine dedicate sul mio sito web o
-            scrivimi per una consulenza gratuita. Ti offrirò soluzioni
-            personalizzate per i tuoi obiettivi.
+            Specializzato nella creazione di siti web professionali e
+            ottimizzati per i motori di ricerca, gestisco anche strategie di
+            social media marketing mirate a far crescere il tuo business online.
+            Il mio obiettivo è risparmiarti tempo e fornirti un supporto
+            continuo e affidabile.
+            <br />
+            <br />
+            Per saperne di più sulle mie competenze e su come posso aiutarti a
+            raggiungere i tuoi obiettivi, visita le pagine dedicate sul mio sito
+            web o contattami per una consulenza gratuita. Sono qui per offrirti
+            soluzioni personalizzate alle tue esigenze.
           </p>
 
           <img className={style.freccia} src={Freccia} />
@@ -39,17 +44,21 @@ export default function About() {
       </div>
 
       <p className={style.Description}>
-        Ciao, sono Stefano. La mia passione è comunicare e creare con il
-        computer.
-        <br />
-        <br /> Mi occupo di creare siti web professionali e ottimizzati, e di
-        gestire le strategie di social media marketing per far crescere il tuo
-        business. Ti risparmio tempo e ti offro supporto e assistenza continua.{" "}
+        Ciao, sono Stefano, un esperto in Web Design e Social Media Marketing.
+        La mia passione è utilizzare le mie competenze digitali per comunicare e
+        creare soluzioni efficaci.
         <br />
         <br />
-        Se vuoi saperne di più, visita le pagine dedicate sul mio sito web o
-        scrivimi per una consulenza gratuita. Ti offrirò soluzioni
-        personalizzate per i tuoi obiettivi.
+        Specializzato nella creazione di siti web professionali e ottimizzati
+        per i motori di ricerca, gestisco anche strategie di social media
+        marketing mirate a far crescere il tuo business online. Il mio obiettivo
+        è risparmiarti tempo e fornirti un supporto continuo e affidabile.
+        <br />
+        <br />
+        Per saperne di più sulle mie competenze e su come posso aiutarti a
+        raggiungere i tuoi obiettivi, visita le pagine dedicate sul mio sito web
+        o contattami per una consulenza gratuita. Sono qui per offrirti
+        soluzioni personalizzate alle tue esigenze.
       </p>
     </div>
   );

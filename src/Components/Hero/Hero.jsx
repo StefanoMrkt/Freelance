@@ -69,33 +69,38 @@ export default function Hero() {
   return (
     <div className={style.heroDiv} id="Home">
       <div className={style.heroSx}>
-        <img src={Oblique} alt="Oblique" className={style.oblique} />
-        <div className={style.myWork}>
+        <img src={Oblique} alt="" className={style.oblique} />
+        <p className={style.myWork}>
           SOCIAL MEDIA MANAGER,
           <br />
           WEB DESIGNER & FRONT-END DEVELOPER
-        </div>
+        </p>
         <div className={style.divMe}>
-          <div className={style.myName} style={{ color: theme.theme.text }}>
+          <h1 className={style.myName} style={{ color: theme.theme.text }}>
             Stefano Montemarli
-          </div>
+          </h1>
           <div className={style.heroDown}>
             <div
               className={style.line}
               style={{ background: theme.theme.text }}
             ></div>
-            <p className={style.myDescription}>
-              Gestisco profili social e creo siti web. Sarò il tuo supporto e lo
-              faccio con passione e dedizione
-            </p>
+            <h2 className={style.myDescription}>
+              Realizzo siti web SEO-friendly e gestisco profili social per
+              potenziare il tuo brand. Il mio impegno è la tua crescita online.
+            </h2>
           </div>
         </div>
       </div>
       <div className={style.heroDx}>
-        <img src={Bolla} alt="Bolla" className={style.bolla} />
-        <img src={Circle} alt="Circle" id="Circle" className={style.circle} />
+        <img src={Bolla} alt="" className={style.bolla} />
+        <img
+          src={Circle}
+          alt="Stefano Montemarli"
+          id="Circle"
+          className={style.circle}
+        />
         <button className={style.play} id="play" onClick={PlayVideo}>
-          <img src={PlayButton}></img>
+          <img src={PlayButton} alt="Play"></img>
         </button>
         {loading && (
           <div className={style.loader}>
@@ -104,7 +109,7 @@ export default function Hero() {
         )}
         <div className={style.circularIframe} ref={circularIframeRef}></div>
         <button className={style.stop} id="stop" onClick={StopVideo}>
-          <img src={StopButton}></img>
+          <img src={StopButton} alt="Stop"></img>
         </button>
 
         <div className={style.color3}></div>

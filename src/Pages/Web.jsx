@@ -19,14 +19,11 @@ export default function Web() {
   return (
     <>
       <Helmet>
-        <meta charset="UTF-8" />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/src/assets/Images/Favicon.png"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Stefano Montemarli - Web Designer</title>
+        <meta
+          name="description"
+          content="Realizzo siti web professionali e ottimizzati per i motori di ricerca. Scopri come posso migliorare la tua presenza online"
+        />
         <meta property="og:title" content="Stefano Montemarli" />
         <meta
           property="og:description"
@@ -39,9 +36,8 @@ export default function Web() {
         />
         <meta
           property="og:url"
-          content="https://www.stefanomontemarli.it/servizi/web"
+          content="https://www.stefanomontemarli.it/servizi/web-design"
         />
-        <link rel="canonical" href="https://www.stefanomontemarli.it" />
 
         <script>
           {`!function(f,b,e,v,n,t,s)

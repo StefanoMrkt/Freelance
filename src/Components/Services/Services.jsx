@@ -35,17 +35,15 @@ export default function Services() {
       <img src={Freccia} className={style.freccia} />
 
       <div className={style.divService}>
-        <button
+        <a
+          href="/servizi/web-design"
           className={style.imgService}
           onMouseEnter={() => setIsHovered1(true)}
           onMouseLeave={() => setIsHovered1(false)}
-          onClick={() => {
-            navigate(`/servizi/web`);
-          }}
         >
-          <img className={style.pc1} src={PC1} />
-          <img className={style.pc2} src={PC2} />
-        </button>
+          <img className={style.pc1} src={PC1} alt="Laptop" />
+          <img className={style.pc2} src={PC2} alt="Laptop" />
+        </a>
 
         <div className={style.textService1}>
           <h3 ref={titleRef1} className={style.serviceTitle1}>
@@ -74,17 +72,15 @@ export default function Services() {
           </div>
           <p className={style.description2}>I tuoi social gestiti al meglio</p>
         </div>
-        <button
+        <a
+          href="/servizi/social-media"
           className={style.imgService}
           onMouseEnter={() => setIsHovered2(true)}
           onMouseLeave={() => setIsHovered2(false)}
-          onClick={() => {
-            navigate(`/servizi/social`);
-          }}
         >
-          <img src={Phone} className={style.phone1} />
-          <img src={Phone1} className={style.phone2} />
-        </button>
+          <img src={Phone} className={style.phone1} alt="Smartphone" />
+          <img src={Phone1} className={style.phone2} alt="Smartphone" />
+        </a>
       </div>
 
       <img className={style.puntini} src={Puntini} />

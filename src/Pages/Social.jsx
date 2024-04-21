@@ -19,14 +19,11 @@ export default function Web() {
   return (
     <>
       <Helmet>
-        <meta charset="UTF-8" />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/src/assets/Images/Favicon.png"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Stefano Montemarli - Social Media Manager</title>
+        <meta
+          name="description"
+          content="Gestisco i tuoi canali social con creatività e competenza per raggiungere i tuoi obiettivi. Scopri come migliorare la tua presenza"
+        />
         <meta property="og:title" content="Stefano Montemarli" />
         <meta
           property="og:description"
@@ -39,9 +36,8 @@ export default function Web() {
         />
         <meta
           property="og:url"
-          content="https://www.stefanomontemarli.it/servizi/social"
+          content="https://www.stefanomontemarli.it/servizi/social-media"
         />
-        <link rel="canonical" href="https://www.stefanomontemarli.it" />
 
         <script>
           {`!function(f,b,e,v,n,t,s)

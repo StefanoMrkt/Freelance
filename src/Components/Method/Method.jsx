@@ -29,8 +29,11 @@ export default function Method() {
             </Col>
             <Col sm={12}>
               <p className={style.description}>
-                Il mio metodo per dare energia e vitalità ai tuoi progetti di
-                web design e social media.
+                Il Metodo Spark è un approccio unico che utilizzo per infondere
+                energia e vitalità nei tuoi progetti di web design e social
+                media. Questo metodo è stato sviluppato con l'obiettivo di
+                ottimizzare la presenza online e aumentare l'engagement del tuo
+                brand.
               </p>
             </Col>
             <Col
@@ -42,9 +45,11 @@ export default function Method() {
             </Col>
             <Col sm={12}>
               <p className={style.description}>
-                Ti invio report dettagliati con le statistiche e le analisi, per
-                mostrarti i risultati ottenuti e le possibili azioni da
-                intraprendere.
+                Fornisco report dettagliati e statistiche approfondite,
+                permettendoti di visualizzare i risultati ottenuti. Questi dati
+                ti aiuteranno a comprendere meglio le performance del tuo sito
+                web e dei tuoi canali social, e a identificare le strategie più
+                efficaci per il tuo business.
               </p>
             </Col>
           </Row>
@@ -58,8 +63,10 @@ export default function Method() {
             </Col>
             <Col sm={12}>
               <p className={style.description}>
-                Creo il tuo sito web e gestisco i tuoi social media,
-                garantendoti coerenza grafica e comunicativa.
+                Offro un servizio completo che include la creazione del tuo sito
+                web e la gestione dei tuoi social media. Questo approccio
+                integrato garantisce coerenza grafica e comunicativa,
+                migliorando l'immagine del tuo brand e l'esperienza dell'utente.
               </p>
             </Col>
             <Col
@@ -71,8 +78,10 @@ export default function Method() {
             </Col>
             <Col sm={12}>
               <p className={style.description}>
-                Catturo l’attenzione del tuo pubblico e lo faccio interagire con
-                te, con un tocco personale e distintivo
+                Creo contenuti unici e coinvolgenti, studiati per catturare
+                l'attenzione del tuo pubblico e stimolare l'interazione. Questo
+                approccio personalizzato ti permette di distinguerti dalla
+                concorrenza e di creare un legame più forte con i tuoi clienti.
               </p>
             </Col>
           </Row>
@@ -86,9 +95,11 @@ export default function Method() {
             </Col>
             <Col sm={12}>
               <p className={style.description}>
-                Non mi limito a copiare quello che fanno gli altri, ma
-                sperimento nuove idee e soluzioni. Nessun template già pronto,
-                ma 100% personalizzato.
+                La mia creatività non ha limiti. Non mi limito a copiare quello
+                che fanno gli altri, ma sperimento continuamente nuove idee e
+                soluzioni. Non utilizzo template predefiniti, ma creo design
+                100% personalizzati, in grado di rispecchiare la personalità del
+                tuo brand e di catturare l'attenzione dei visitatori.
               </p>
             </Col>
           </Row>
@@ -103,8 +114,10 @@ export default function Method() {
             </Col>
             <Col sm={12}>
               <p className={style.description}>
-                Ti ascolto e ti do il mio parere in ogni fase del processo di
-                lavoro.
+                Il mio approccio al lavoro è basato sul coinvolgimento del
+                cliente in ogni fase del processo. Ascolto attentamente le tue
+                esigenze e ti fornisco consigli e feedback costanti, per
+                garantire che il risultato finale rispecchi le tue aspettative.
               </p>
             </Col>
             <Col
@@ -117,15 +130,18 @@ export default function Method() {
             </Col>
             <Col sm={12}>
               <p className={style.description}>
-                Rispetto le scadenze imposte e le esigenze dei miei clienti.
+                La mia professionalità si riflette nel rispetto delle scadenze e
+                delle esigenze dei miei clienti. Lavoro con dedizione e
+                passione, e mi impegno sempre al massimo per garantire la
+                massima soddisfazione del cliente.
               </p>
             </Col>
           </Row>
         </Container>
 
-        <img src={X} alt="X" className={style.x} />
-        <img src={XEmpty} alt="XEmpty" className={style.xEmpty} />
-        <img src={Puntini} alt="Puntini" className={style.puntini} />
+        <img src={X} alt="" className={style.x} />
+        <img src={XEmpty} alt="" className={style.xEmpty} />
+        <img src={Puntini} alt="" className={style.puntini} />
 
         <div className={style.color2}></div>
         <div className={style.color3}></div>

@@ -10,27 +10,27 @@ export default function HeroSocial() {
   return (
     <div className={style.heroDiv} id="Home">
       <div className={style.heroSx}>
-        <div className={style.myWork}>Social Media Manager</div>
-        <div className={style.myName} style={{ color: theme.theme.text }}>
+        <p className={style.myWork}>Social Media Manager</p>
+        <h1 className={style.myName} style={{ color: theme.theme.text }}>
           Esperienza social al tuo servizio
-        </div>
+        </h1>
         <div className={style.heroDown}>
           <div
             className={style.line}
             style={{ background: theme.theme.text }}
           ></div>
-          <p className={style.myDescription}>
+          <h2 className={style.myDescription}>
             Gestisco i tuoi canali social con creatività e competenza per
             raggiungere i tuoi obiettivi
-          </p>
+          </h2>
         </div>
       </div>
       <div className={style.heroDx}>
-        <img src={Bolla} alt="Bolla" className={style.bolla1} />
-        <img src={Bolla} alt="Bolla" className={style.bolla2} />
-        <img src={Bolla} alt="Bolla" className={style.bolla3} />
-        <img src={Bolla} alt="Bolla" className={style.bolla4} />
-        <img src={Bolla} alt="Bolla" className={style.bolla5} />
+        <img src={Bolla} alt="" className={style.bolla1} />
+        <img src={Bolla} alt="" className={style.bolla2} />
+        <img src={Bolla} alt="" className={style.bolla3} />
+        <img src={Bolla} alt="" className={style.bolla4} />
+        <img src={Bolla} alt="" className={style.bolla5} />
         <img src={Phone1} alt="Smartphone" className={style.serviceImage1} />
         <img src={Phone2} alt="Smartphone" className={style.serviceImage2} />
 

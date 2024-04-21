@@ -21,8 +21,8 @@ export default function Opinion() {
         Logo={MatteoMangili}
       />
 
-      <img className={style.bolla} src={Bolla} alt="Bolla" />
-      <img className={style.puntini} src={Puntini} alt="Puntini" />
+      <img className={style.bolla} src={Bolla} alt="" />
+      <img className={style.puntini} src={Puntini} alt="" />
       <div className={style.color1}></div>
       <div className={style.color2}></div>
     </div>

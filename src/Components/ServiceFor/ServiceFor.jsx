@@ -1,6 +1,4 @@
 import style from "./ServiceFor.module.css";
-
-import React, { useEffect } from "react";
 import parse from "html-react-parser";
 
 import XRed from "../../assets/Images/XEmptyRed.png";
@@ -34,27 +32,27 @@ export default function ServiceFor({
         <div className={style.Dx}>
           <p className={style.MainDescription}>{parse(secondaDescrizione)}</p>
           <div className={style.point}>
-            <img className={style.icona} src={icona1}></img>
+            <img className={style.icona} src={icona1} alt="Asterisco"></img>
             <p className={style.secondDescription}>{titolo1}</p>
           </div>
           <div className={style.point}>
-            <img className={style.icona} src={icona1}></img>
+            <img className={style.icona} src={icona1} alt="Asterisco"></img>
             <p className={style.secondDescription}>{titolo2}</p>
           </div>
           <div className={style.point}>
-            <img className={style.icona} src={icona1}></img>
+            <img className={style.icona} src={icona1} alt="Asterisco"></img>
             <p className={style.secondDescription}>{titolo3}</p>
           </div>
           <div className={style.point}>
-            <img className={style.icona} src={icona1}></img>
+            <img className={style.icona} src={icona1} alt="Asterisco"></img>
             <p className={style.secondDescription}>{titolo4}</p>
           </div>
         </div>
       </div>
 
-      <img src={XRed} alt="X" className={style.XRed} />
-      <img src={Bolla} alt="Bolla" className={style.Bolla} />
-      <img src={PuntiniBlu} alt="Puntini" className={style.PuntiniBlu} />
+      <img src={XRed} alt="" className={style.XRed} />
+      <img src={Bolla} alt="" className={style.Bolla} />
+      <img src={PuntiniBlu} alt="" className={style.PuntiniBlu} />
 
       <div className={style.color1}></div>
       <div className={style.color2}></div>

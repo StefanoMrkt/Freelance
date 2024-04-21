@@ -30,18 +30,18 @@ export default function FollowMe() {
       <div className={style.second}>
         <div className={style.blockDiv}>
           <div className={style.div}>
-            <a href="https://www.instagram.com/">
+            <a href="https://www.instagram.com/stefano.montemarli/">
               <img className={style.social} src={InstagramC} alt="Instagram" />
             </a>
-            <a href="https://www.instagram.com/">
+            <a href="https://www.tiktok.com/@stefanomontemarli?lang=it-IT">
               <img className={style.social} src={TikTokC} alt="TikTok" />
             </a>
           </div>
           <div className={style.div}>
-            <a href="https://www.instagram.com/">
+            <a href="https://www.facebook.com/profile.php?id=100086771147797">
               <img className={style.social} src={FacebookC} alt="Facebook" />
             </a>
-            <a href="https://www.instagram.com/">
+            <a href="https://www.linkedin.com/in/stefano-montemarli/">
               <img className={style.social} src={LinkedInC} alt="LinkedIn" />
             </a>
           </div>

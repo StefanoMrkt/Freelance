@@ -101,9 +101,9 @@ export default function Contacts() {
       /> */}
 
       {/* <img src={Freccina} alt="Freccia" className={style.freccina} /> */}
-      <img src={PuntiniBlu} alt="PuntiniBlu" className={style.puntiniBlu} />
-      <img src={Cerchio1} alt="Cerchio" className={style.cerchio1} />
-      <img src={Cerchio2} alt="Cerchio" className={style.cerchio2} />
+      <img src={PuntiniBlu} alt="" className={style.puntiniBlu} />
+      <img src={Cerchio1} alt="" className={style.cerchio1} />
+      <img src={Cerchio2} alt="" className={style.cerchio2} />
 
       <div className={style.color3}></div>
       <div className={style.color4}></div>

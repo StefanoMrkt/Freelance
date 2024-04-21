@@ -8,13 +8,6 @@ export default function Blog() {
   return (
     <>
       <Helmet>
-        <meta charset="UTF-8" />
-        <link
-          rel="icon"
-          type="image/svg+xml"
-          href="/src/assets/Images/Favicon.png"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Stefano Montemarli - Web Designer & Social Media Manager</title>
         <meta property="og:title" content="Stefano Montemarli" />
         <meta

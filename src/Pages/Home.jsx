@@ -13,23 +13,15 @@ import CTA from "../Components/CTA/CTA";
 import Call from "../Components/Call/Call";
 
 import { Helmet } from "react-helmet";
-import { useEffect } from "react";
 
 export default function Home() {
   return (
     <>
       <Helmet>
-        <meta charset="UTF-8" />
-        <link
-          rel="icon"
-          type="image/png"
-          href="/src/assets/Images/Favicon.png"
-        />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Stefano Montemarli - Web Designer & Social Media Manager</title>
         <meta
           name="description"
-          content="Realizzo siti web professionali e gestisco la tua presenza sui social media. Scorpi come posso migliorare la tua presenza online!"
+          content="Realizzo siti web professionali e gestisco la tua presenza sui social media. Scopri come posso migliorare la tua presenza online!"
         />
 
         <meta property="og:title" content="Stefano Montemarli" />
@@ -43,7 +35,9 @@ export default function Home() {
           content="https://1drv.ms/i/s!AmWaVBl9p_dCgWiemacZx7YdEJm6?e=OpigS2"
         />
         <meta property="og:url" content="https://www.stefanomontemarli.it" />
-        <link rel="canonical" href="https://www.stefanomontemarli.it" />
+        <link rel="canonical" href="https://stefanomontemarli.it" />
+        <meta name="msvalidate.01" content="657F792FCA9D39F2A5105AE067F78E0B" />
+
         <script>
           {`!function(f,b,e,v,n,t,s)
           {if(f.fbq)return;n=f.fbq=function(){n.callMethod?

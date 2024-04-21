@@ -27,11 +27,11 @@ export default function HeroFree() {
         </div>
       </div>
       <div className={style.heroDx}>
-        <img src={Bolla} alt="Bolla" className={style.bolla1} />
-        <img src={Bolla} alt="Bolla" className={style.bolla2} />
-        <img src={Bolla} alt="Bolla" className={style.bolla3} />
-        <img src={Bolla} alt="Bolla" className={style.bolla4} />
-        <img src={Bolla} alt="Bolla" className={style.bolla5} />
+        <img src={Bolla} alt="" className={style.bolla1} />
+        <img src={Bolla} alt="" className={style.bolla2} />
+        <img src={Bolla} alt="" className={style.bolla3} />
+        <img src={Bolla} alt="" className={style.bolla4} />
+        <img src={Bolla} alt="" className={style.bolla5} />
         <img src={FreeLesson} alt="Copertina" className={style.serviceImage1} />
         <img src={Indice} alt="Indice" className={style.serviceImage2} />
 

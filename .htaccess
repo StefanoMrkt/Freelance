@@ -5,3 +5,7 @@ RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
 RewriteCond %{REQUEST_FILENAME} !-l
 RewriteRule . /index.html [L]
+
+Redirect 301 /privacy-policy /
+Redirect 301 /servizi/web /servizi/web-design
+Redirect 301 /servizi/social /servizi/social-media

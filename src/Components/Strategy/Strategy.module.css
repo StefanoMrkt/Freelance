@@ -184,6 +184,10 @@ rotate: -12deg;
   .description {
     font-size: 23px;
   }
+
+  .stackCard {
+    padding-left: 0px;
+  }
 }
 
 

@@ -48,7 +48,7 @@ export default function SingleReview({
       </div>
       <div className={style.Dx}>
         <div className={style.author}>
-          <img src={Logo} alt="Logo" className={style.logo} />
+          <img src={Logo} alt="Matteo Mangili" className={style.logo} />
           <p className={style.name}>{Nome}</p>
         </div>
         <p className={style.text}>{Testo}</p>

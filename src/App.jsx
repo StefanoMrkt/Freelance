@@ -17,6 +17,7 @@ import Web from "./Pages/Web";
 // import Blog from "./Pages/Blog";
 import FreeLessonDesign from "./Pages/FreeLessonDesign";
 import Call from "./Pages/Call";
+import Error from "./Pages/Error";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -42,10 +43,12 @@ function ThemeWrapper() {
       <ScrollToTop />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/servizi/social" element={<Social />} />
-        <Route path="/servizi/web" element={<Web />} />
+        <Route path="/servizi/social-media" element={<Social />} />
+        <Route path="/servizi/web-design" element={<Web />} />
         <Route path="/lezione-gratuita-design" element={<FreeLessonDesign />} />
         <Route path="/call-prenotata" element={<Call />} />
+        <Route path="*" element={<Error />} />
+
         {/* <Route path="/blog" element={<Blog />} /> */}
       </Routes>
     </Router>
